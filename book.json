@@ -1,0 +1,8 @@
+{
+  "title" : "mybook",
+  "description": "demo",
+  "author" : "mingyue",
+  "styles": {
+    "website": "styles/website.css"
+  }
+}
