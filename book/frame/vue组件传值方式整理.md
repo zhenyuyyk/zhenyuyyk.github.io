@@ -1,8 +1,8 @@
 # vue组件传值方式整理
-
 # 父子组件传值
 ## props/$emit
 + 父组件
+
 ```
 <template>
   <div>
@@ -73,6 +73,7 @@ export default {
 ```
 ## ref与$parent/$children
 + 父组件
+
 ```
 <template>
   <div>
@@ -112,6 +113,7 @@ export default {
 </style>
 ```
 + 子组件
+
 ```
 <template>
   <div>
@@ -147,6 +149,7 @@ export default {
 # 隔代组件传值（爷孙组件参数互传）
 ## $attrs/$listeners
 + 爷组件
+
 ```
 <template>
   <div>
@@ -183,6 +186,7 @@ export default {
 </style>
 ```
 + 父组件
+
 ```
 <template>
   <div>
@@ -211,6 +215,7 @@ export default {
 </style>
 ```
 + 孙组件
+
 ```
 <template>
   <div>
@@ -248,6 +253,7 @@ export default {
 ## provide/inject
 > 提示：provide 和 inject 绑定并不是可响应的。这是刻意为之的。然而，如果你传入了一个可监听的对象，那么其对象的 property 还是可响应的。如果传入的值是字符串，数字，布尔值等基本类型则会无响应！！！
 + 祖先组件（所有后代组件都能拿到该值，但传动态值必须是个对象！！！）
+
 ```
 <template>
   <div>
@@ -286,6 +292,7 @@ export default {
 </style>
 ```
 + 后代组件（任意一个后代元素通过该写法都能拿到值）
+
 ```
 <template>
   <div>
@@ -319,11 +326,13 @@ export default {
 ## EventBus
 > 调用完之后必须销毁，否则会出现bug！！
 + src/tools/event-bus.js(新建文件)
+
 ```
 import Vue from 'vue'
 export const Bus = new Vue()
 ```
 + 事件总线
+
 ```
 <template>
   <div id="app">
@@ -357,6 +366,7 @@ export default Vue.extend({
 </script>
 ```
 + 事件接收
+
 ```
 <template>
   <div class="sun">

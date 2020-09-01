@@ -1,0 +1,676 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>vue组件传值方式整理 · mybook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="mingyue">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../js/">
+            
+                <a href="../js/">
+            
+                    
+                    js知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../js/浅拷贝和深拷贝.html">
+            
+                <a href="../js/浅拷贝和深拷贝.html">
+            
+                    
+                    浅拷贝和深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../js/闭包.html">
+            
+                <a href="../js/闭包.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../js/原型和原型链.html">
+            
+                <a href="../js/原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="vue组件传值方式整理.html">
+            
+                <a href="vue组件传值方式整理.html">
+            
+                    
+                    vue组件传值方式整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >vue组件传值方式整理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vue&#x7EC4;&#x4EF6;&#x4F20;&#x503C;&#x65B9;&#x5F0F;&#x6574;&#x7406;">vue&#x7EC4;&#x4EF6;&#x4F20;&#x503C;&#x65B9;&#x5F0F;&#x6574;&#x7406;</h1>
+<h1 id="&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;">&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;</h1>
+<h2 id="propsemit">props/$emit</h2>
+<ul>
+<li><p>&#x7236;&#x7EC4;&#x4EF6;
+```</p>
+<template>
+<div>
+
+  <children :msg="msg" @changemsg="changeMsg">
+</children></div>
+</template>
+
+</li>
+</ul>
+<script>
+import Children from "@/views/assembly/children";
+
+export default {
+  components: {
+    Children
+  },
+  name: "parent",
+  data() {
+    return {
+      msg: "父组件的值"
+    }
+  },
+  methods: {
+    changeMsg(data) {
+      this.msg = data
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code>+ 子组件
+</code></pre><template>
+  <div>
+
+    <button @click="clickbtn">点我改变父组件</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "children",
+  props: {
+    msg: {
+      type: String,
+      default: "default"
+    }
+  },
+  data() {
+    return {}
+  },
+  methods: {
+    clickbtn() {
+      let msg = "改变后的值" + Math.ceil(Math.random()*10)
+      this.$emit("changeMsg", msg)
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code>## ref与$parent/$children
++ 父组件
+</code></pre><template>
+  <div>
+
+    <button @click="changeChildren">点击改变子元素的值</button>
+    <Children ref="children"/>
+  </div>
+</template>
+
+<script>
+import Children from "@/views/assembly/children";
+
+export default {
+  components: {
+    Children
+  },
+  name: "parent",
+  data() {
+    return {
+      msg: "父组件的值"
+    }
+  },
+  methods: {
+    changeChildren() {
+      let msg="父组件改变子组件"
+      this.$refs.children.setMsg(msg);
+    },
+    childrenValue(nsg){
+      this.msg=nsg
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code>+ 子组件
+</code></pre><template>
+  <div>
+
+    <button @click="clickbtn">点我改变父组件的值</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "children",
+  data() {
+    return {
+      childrenMsg: "子元素的值"
+    }
+  },
+  methods: {
+    setMsg(msg) {
+      this.childrenMsg = msg
+    },
+    clickbtn() {
+      let msg="子组件改变父组件"
+      this.$parent.childrenValue(msg);
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code># 隔代组件传值（爷孙组件参数互传）
+## $attrs/$listeners
++ 爷组件
+</code></pre><template>
+  <div>
+
+
+    <Parent :msg="msg" @setVal="setVal"/>
+  </div>
+</template>
+
+<script>
+import Parent from "./parent"
+
+export default {
+  components: {
+    Parent
+  },
+  name: "grandparent",
+  data() {
+    return {
+      msg: "我是爷组件的值",
+      msg2: "接收孙组件的值"
+    }
+  },
+  methods: {
+    setVal(msg) {
+      this.msg2 = msg
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code>+ 父组件
+</code></pre><template>
+  <div>
+    <Children v-bind="$attrs" v-on="$listeners"/>
+    <!-- $attrs爷传孙，$listeners孙传爷 -->
+  </div>
+</template>
+
+<script>
+import Children from "./children";
+
+export default {
+  components: {
+    Children
+  },
+  name: "parent",
+  data() {
+    return {}
+  },
+  methods: {}
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code>+ 孙组件
+</code></pre><template>
+  <div>
+
+
+    <button @click="toValue">点击传值给爷组件</button>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "children",
+  props: {
+    msg: String,
+  },
+  data() {
+    return {
+      msg2: "我是孙组件的值"
+    }
+  },
+  methods: {
+    toValue() {
+      let msg = "孙组建的传值" + Math.ceil(Math.random() * 10)
+      this.$emit("setVal", msg)
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code>
+## provide/inject
+&gt; 提示：provide 和 inject 绑定并不是可响应的。这是刻意为之的。然而，如果你传入了一个可监听的对象，那么其对象的 property 还是可响应的。如果传入的值是字符串，数字，布尔值等基本类型则会无响应！！！
++ 祖先组件（所有后代组件都能拿到该值，但传动态值必须是个对象！！！）
+</code></pre><template>
+  <div>
+
+    <Parent />
+  </div>
+</template>
+
+<script>
+import Parent from "./parent"
+
+export default {
+  components: {
+    Parent
+  },
+  name: "grandparent",
+  provide() {
+    return {
+      data: this.dataObj
+    }
+  },
+  data() {
+    return {
+      dataObj: {
+        msg: '这是爷组件的值',
+        num: 10
+      }
+    }
+  },
+  methods: {}
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code>+ 后代组件（任意一个后代元素通过该写法都能拿到值）
+</code></pre><template>
+  <div>
+
+  </div>
+</template>
+
+<script>
+export default {
+  name: "parent",
+  inject: ['data'],
+  computed: {
+    txt() {
+      return `${this.data.msg}+${this.data.num}+${this.parentMsg}`;
+    }
+  },
+  data() {
+    return {
+      parentMsg: "后代组件"
+    }
+  },
+  methods: {}
+}
+</script>
+
+<style scoped>
+
+<p>&lt;/style&gt;</p>
+<pre><code># 全局传值
+## EventBus
+&gt; 调用完之后必须销毁，否则会出现bug！！
++ src/tools/event-bus.js(新建文件)
+</code></pre><p>import Vue from &#39;vue&#39;
+export const Bus = new Vue()</p>
+<pre><code>+ 事件总线
+</code></pre><template>
+  <div id="app">
+    <button @click="setVal">点击</button>
+    <Home></Home>
+  </div>
+</template>
+
+<p><script lang="ts">
+import Vue from &#39;vue&#39;;
+import {Bus} from &#39;@/tools/event-bus&#39;
+import Home from &#39;@/views/Home&#39;;</p>
+<p>export default Vue.extend({
+  name: &#39;App&#39;,
+  components: {
+    Home
+  },
+  data() {
+    return {
+      msg: 0
+    }
+  },
+  methods: {
+    setVal() {
+      this.msg++;
+      Bus.$emit(&quot;share&quot;, this.msg);
+    }
+  }
+});
+&lt;/script&gt;</p>
+<pre><code>+ 事件接收
+</code></pre><template>
+  <div class="sun">
+    <p></p>
+  </div>
+</template>
+
+<p><script>
+import { Bus } from '@/tools/event-bus'
+export default {
+  name: 'Sun',
+  data(){
+    return {
+      msg:''
+    }
+  },
+  methods:{
+    setMsg(){
+      Bus.$on("share",(data)=>{
+        this.msg = data;
+      })
+    }
+  },
+  created() {
+    this.setMsg();
+  },
+  destroyed(){
+    Bus.$off("share");
+  }
+}
+</script>
+```</p>
+<h2>VUEX</h2>
+<p>不在这展开说了，具体使用方法很多博客，官网也有示例</p>
+</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 框架">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"vue组件传值方式整理","level":"1.3.1","depth":2,"previous":{"title":"框架","level":"1.3","depth":1,"path":"frame/README.md","ref":"frame/README.md","articles":[{"title":"vue组件传值方式整理","level":"1.3.1","depth":2,"path":"frame/vue组件传值方式整理.md","ref":"frame/vue组件传值方式整理.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"mingyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"mybook","gitbook":"*","description":"demo"},"file":{"path":"frame/vue组件传值方式整理.md","mtime":"2020-09-01T07:27:07.883Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-01T07:31:22.175Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
