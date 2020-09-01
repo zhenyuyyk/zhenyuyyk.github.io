@@ -231,28 +231,26 @@
 <h1 id="&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;">&#x7236;&#x5B50;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;</h1>
 <h2 id="propsemit">props/$emit</h2>
 <ul>
-<li><p>&#x7236;&#x7EC4;&#x4EF6;
-```</p>
-<template>
-<div>
-
-  <children :msg="msg" @changemsg="changeMsg">
-</children></div>
-</template>
-
-</li>
+<li>&#x7236;&#x7EC4;&#x4EF6;</li>
 </ul>
-<script>
-import Children from "@/views/assembly/children";
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{ msg }}
+    &lt;Children :msg=&quot;msg&quot; @changeMsg=&quot;changeMsg&quot;/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import Children from &quot;@/views/assembly/children&quot;;
 
 export default {
   components: {
     Children
   },
-  name: "parent",
+  name: &quot;parent&quot;,
   data() {
     return {
-      msg: "父组件的值"
+      msg: &quot;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x503C;&quot;
     }
   },
   methods: {
@@ -261,26 +259,28 @@ export default {
     }
   }
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code>+ 子组件
-</code></pre><template>
-  <div>
+&lt;/style&gt;
+</code></pre><ul>
+<li>&#x5B50;&#x7EC4;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{ msg }}
+    &lt;button @click=&quot;clickbtn&quot;&gt;&#x70B9;&#x6211;&#x6539;&#x53D8;&#x7236;&#x7EC4;&#x4EF6;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-    <button @click="clickbtn">点我改变父组件</button>
-  </div>
-</template>
-
-<script>
+&lt;script&gt;
 export default {
-  name: "children",
+  name: &quot;children&quot;,
   props: {
     msg: {
       type: String,
-      default: "default"
+      default: &quot;default&quot;
     }
   },
   data() {
@@ -288,42 +288,44 @@ export default {
   },
   methods: {
     clickbtn() {
-      let msg = "改变后的值" + Math.ceil(Math.random()*10)
-      this.$emit("changeMsg", msg)
+      let msg = &quot;&#x6539;&#x53D8;&#x540E;&#x7684;&#x503C;&quot; + Math.ceil(Math.random()*10)
+      this.$emit(&quot;changeMsg&quot;, msg)
     }
   }
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code>## ref与$parent/$children
-+ 父组件
-</code></pre><template>
-  <div>
+&lt;/style&gt;
+</code></pre><h2 id="ref&#x4E0E;parentchildren">ref&#x4E0E;$parent/$children</h2>
+<ul>
+<li>&#x7236;&#x7EC4;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{ msg }}
+    &lt;button @click=&quot;changeChildren&quot;&gt;&#x70B9;&#x51FB;&#x6539;&#x53D8;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x503C;&lt;/button&gt;
+    &lt;Children ref=&quot;children&quot;/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-    <button @click="changeChildren">点击改变子元素的值</button>
-    <Children ref="children"/>
-  </div>
-</template>
-
-<script>
-import Children from "@/views/assembly/children";
+&lt;script&gt;
+import Children from &quot;@/views/assembly/children&quot;;
 
 export default {
   components: {
     Children
   },
-  name: "parent",
+  name: &quot;parent&quot;,
   data() {
     return {
-      msg: "父组件的值"
+      msg: &quot;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x503C;&quot;
     }
   },
   methods: {
     changeChildren() {
-      let msg="父组件改变子组件"
+      let msg=&quot;&#x7236;&#x7EC4;&#x4EF6;&#x6539;&#x53D8;&#x5B50;&#x7EC4;&#x4EF6;&quot;
       this.$refs.children.setMsg(msg);
     },
     childrenValue(nsg){
@@ -331,25 +333,27 @@ export default {
     }
   }
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code>+ 子组件
-</code></pre><template>
-  <div>
+&lt;/style&gt;
+</code></pre><ul>
+<li>&#x5B50;&#x7EC4;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{ childrenMsg }}
+    &lt;button @click=&quot;clickbtn&quot;&gt;&#x70B9;&#x6211;&#x6539;&#x53D8;&#x7236;&#x7EC4;&#x4EF6;&#x7684;&#x503C;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-    <button @click="clickbtn">点我改变父组件的值</button>
-  </div>
-</template>
-
-<script>
+&lt;script&gt;
 export default {
-  name: "children",
+  name: &quot;children&quot;,
   data() {
     return {
-      childrenMsg: "子元素的值"
+      childrenMsg: &quot;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x503C;&quot;
     }
   },
   methods: {
@@ -357,39 +361,41 @@ export default {
       this.childrenMsg = msg
     },
     clickbtn() {
-      let msg="子组件改变父组件"
+      let msg=&quot;&#x5B50;&#x7EC4;&#x4EF6;&#x6539;&#x53D8;&#x7236;&#x7EC4;&#x4EF6;&quot;
       this.$parent.childrenValue(msg);
     }
   }
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code># 隔代组件传值（爷孙组件参数互传）
-## $attrs/$listeners
-+ 爷组件
-</code></pre><template>
-  <div>
+&lt;/style&gt;
+</code></pre><h1 id="&#x9694;&#x4EE3;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;&#xFF08;&#x7237;&#x5B59;&#x7EC4;&#x4EF6;&#x53C2;&#x6570;&#x4E92;&#x4F20;&#xFF09;">&#x9694;&#x4EE3;&#x7EC4;&#x4EF6;&#x4F20;&#x503C;&#xFF08;&#x7237;&#x5B59;&#x7EC4;&#x4EF6;&#x53C2;&#x6570;&#x4E92;&#x4F20;&#xFF09;</h1>
+<h2 id="attrslisteners">$attrs/$listeners</h2>
+<ul>
+<li>&#x7237;&#x7EC4;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{ msg }}
+    {{ msg2 }}
+    &lt;Parent :msg=&quot;msg&quot; @setVal=&quot;setVal&quot;/&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-
-    <Parent :msg="msg" @setVal="setVal"/>
-  </div>
-</template>
-
-<script>
-import Parent from "./parent"
+&lt;script&gt;
+import Parent from &quot;./parent&quot;
 
 export default {
   components: {
     Parent
   },
-  name: "grandparent",
+  name: &quot;grandparent&quot;,
   data() {
     return {
-      msg: "我是爷组件的值",
-      msg2: "接收孙组件的值"
+      msg: &quot;&#x6211;&#x662F;&#x7237;&#x7EC4;&#x4EF6;&#x7684;&#x503C;&quot;,
+      msg2: &quot;&#x63A5;&#x6536;&#x5B59;&#x7EC4;&#x4EF6;&#x7684;&#x503C;&quot;
     }
   },
   methods: {
@@ -398,88 +404,95 @@ export default {
     }
   }
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code>+ 父组件
-</code></pre><template>
-  <div>
-    <Children v-bind="$attrs" v-on="$listeners"/>
-    <!-- $attrs爷传孙，$listeners孙传爷 -->
-  </div>
-</template>
+&lt;/style&gt;
+</code></pre><ul>
+<li>&#x7236;&#x7EC4;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;Children v-bind=&quot;$attrs&quot; v-on=&quot;$listeners&quot;/&gt;
+    &lt;!-- $attrs&#x7237;&#x4F20;&#x5B59;&#xFF0C;$listeners&#x5B59;&#x4F20;&#x7237; --&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-<script>
-import Children from "./children";
+&lt;script&gt;
+import Children from &quot;./children&quot;;
 
 export default {
   components: {
     Children
   },
-  name: "parent",
+  name: &quot;parent&quot;,
   data() {
     return {}
   },
   methods: {}
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code>+ 孙组件
-</code></pre><template>
-  <div>
+&lt;/style&gt;
+</code></pre><ul>
+<li>&#x5B59;&#x7EC4;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{ msg }}
+    {{ msg2 }}
+    &lt;button @click=&quot;toValue&quot;&gt;&#x70B9;&#x51FB;&#x4F20;&#x503C;&#x7ED9;&#x7237;&#x7EC4;&#x4EF6;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-
-    <button @click="toValue">点击传值给爷组件</button>
-  </div>
-</template>
-
-<script>
+&lt;script&gt;
 export default {
-  name: "children",
+  name: &quot;children&quot;,
   props: {
     msg: String,
   },
   data() {
     return {
-      msg2: "我是孙组件的值"
+      msg2: &quot;&#x6211;&#x662F;&#x5B59;&#x7EC4;&#x4EF6;&#x7684;&#x503C;&quot;
     }
   },
   methods: {
     toValue() {
-      let msg = "孙组建的传值" + Math.ceil(Math.random() * 10)
-      this.$emit("setVal", msg)
+      let msg = &quot;&#x5B59;&#x7EC4;&#x5EFA;&#x7684;&#x4F20;&#x503C;&quot; + Math.ceil(Math.random() * 10)
+      this.$emit(&quot;setVal&quot;, msg)
     }
   }
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code>
-## provide/inject
-&gt; 提示：provide 和 inject 绑定并不是可响应的。这是刻意为之的。然而，如果你传入了一个可监听的对象，那么其对象的 property 还是可响应的。如果传入的值是字符串，数字，布尔值等基本类型则会无响应！！！
-+ 祖先组件（所有后代组件都能拿到该值，但传动态值必须是个对象！！！）
-</code></pre><template>
-  <div>
+&lt;/style&gt;
+</code></pre><h2 id="provideinject">provide/inject</h2>
+<blockquote>
+<p>&#x63D0;&#x793A;&#xFF1A;provide &#x548C; inject &#x7ED1;&#x5B9A;&#x5E76;&#x4E0D;&#x662F;&#x53EF;&#x54CD;&#x5E94;&#x7684;&#x3002;&#x8FD9;&#x662F;&#x523B;&#x610F;&#x4E3A;&#x4E4B;&#x7684;&#x3002;&#x7136;&#x800C;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x4F20;&#x5165;&#x4E86;&#x4E00;&#x4E2A;&#x53EF;&#x76D1;&#x542C;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x5BF9;&#x8C61;&#x7684; property &#x8FD8;&#x662F;&#x53EF;&#x54CD;&#x5E94;&#x7684;&#x3002;&#x5982;&#x679C;&#x4F20;&#x5165;&#x7684;&#x503C;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6570;&#x5B57;&#xFF0C;&#x5E03;&#x5C14;&#x503C;&#x7B49;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x5219;&#x4F1A;&#x65E0;&#x54CD;&#x5E94;&#xFF01;&#xFF01;&#xFF01;</p>
+<ul>
+<li>&#x7956;&#x5148;&#x7EC4;&#x4EF6;&#xFF08;&#x6240;&#x6709;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#x90FD;&#x80FD;&#x62FF;&#x5230;&#x8BE5;&#x503C;&#xFF0C;&#x4F46;&#x4F20;&#x52A8;&#x6001;&#x503C;&#x5FC5;&#x987B;&#x662F;&#x4E2A;&#x5BF9;&#x8C61;&#xFF01;&#xFF01;&#xFF01;&#xFF09;</li>
+</ul>
+</blockquote>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{dataObj.msg}}
+    &lt;Parent /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-    <Parent />
-  </div>
-</template>
-
-<script>
-import Parent from "./parent"
+&lt;script&gt;
+import Parent from &quot;./parent&quot;
 
 export default {
   components: {
     Parent
   },
-  name: "grandparent",
+  name: &quot;grandparent&quot;,
   provide() {
     return {
       data: this.dataObj
@@ -488,29 +501,31 @@ export default {
   data() {
     return {
       dataObj: {
-        msg: '这是爷组件的值',
+        msg: &apos;&#x8FD9;&#x662F;&#x7237;&#x7EC4;&#x4EF6;&#x7684;&#x503C;&apos;,
         num: 10
       }
     }
   },
   methods: {}
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code>+ 后代组件（任意一个后代元素通过该写法都能拿到值）
-</code></pre><template>
-  <div>
+&lt;/style&gt;
+</code></pre><ul>
+<li>&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&#xFF08;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x540E;&#x4EE3;&#x5143;&#x7D20;&#x901A;&#x8FC7;&#x8BE5;&#x5199;&#x6CD5;&#x90FD;&#x80FD;&#x62FF;&#x5230;&#x503C;&#xFF09;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    {{ txt }}
+  &lt;/div&gt;
+&lt;/template&gt;
 
-  </div>
-</template>
-
-<script>
+&lt;script&gt;
 export default {
-  name: "parent",
-  inject: ['data'],
+  name: &quot;parent&quot;,
+  inject: [&apos;data&apos;],
   computed: {
     txt() {
       return `${this.data.msg}+${this.data.num}+${this.parentMsg}`;
@@ -518,36 +533,43 @@ export default {
   },
   data() {
     return {
-      parentMsg: "后代组件"
+      parentMsg: &quot;&#x540E;&#x4EE3;&#x7EC4;&#x4EF6;&quot;
     }
   },
   methods: {}
 }
-</script>
+&lt;/script&gt;
 
-<style scoped>
+&lt;style scoped&gt;
 
-<p>&lt;/style&gt;</p>
-<pre><code># 全局传值
-## EventBus
-&gt; 调用完之后必须销毁，否则会出现bug！！
-+ src/tools/event-bus.js(新建文件)
-</code></pre><p>import Vue from &#39;vue&#39;
-export const Bus = new Vue()</p>
-<pre><code>+ 事件总线
-</code></pre><template>
-  <div id="app">
-    <button @click="setVal">点击</button>
-    <Home></Home>
-  </div>
-</template>
+&lt;/style&gt;
+</code></pre><h1 id="&#x5168;&#x5C40;&#x4F20;&#x503C;">&#x5168;&#x5C40;&#x4F20;&#x503C;</h1>
+<h2 id="eventbus">EventBus</h2>
+<blockquote>
+<p>&#x8C03;&#x7528;&#x5B8C;&#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x9500;&#x6BC1;&#xFF0C;&#x5426;&#x5219;&#x4F1A;&#x51FA;&#x73B0;bug&#xFF01;&#xFF01;</p>
+<ul>
+<li>src/tools/event-bus.js(&#x65B0;&#x5EFA;&#x6587;&#x4EF6;)</li>
+</ul>
+</blockquote>
+<pre><code>import Vue from &apos;vue&apos;
+export const Bus = new Vue()
+</code></pre><ul>
+<li>&#x4E8B;&#x4EF6;&#x603B;&#x7EBF;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div id=&quot;app&quot;&gt;
+    &lt;button @click=&quot;setVal&quot;&gt;&#x70B9;&#x51FB;&lt;/button&gt;
+    &lt;Home&gt;&lt;/Home&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-<p><script lang="ts">
-import Vue from &#39;vue&#39;;
-import {Bus} from &#39;@/tools/event-bus&#39;
-import Home from &#39;@/views/Home&#39;;</p>
-<p>export default Vue.extend({
-  name: &#39;App&#39;,
+&lt;script lang=&quot;ts&quot;&gt;
+import Vue from &apos;vue&apos;;
+import {Bus} from &apos;@/tools/event-bus&apos;
+import Home from &apos;@/views/Home&apos;;
+
+export default Vue.extend({
+  name: &apos;App&apos;,
   components: {
     Home
   },
@@ -563,26 +585,28 @@ import Home from &#39;@/views/Home&#39;;</p>
     }
   }
 });
-&lt;/script&gt;</p>
-<pre><code>+ 事件接收
-</code></pre><template>
-  <div class="sun">
-    <p></p>
-  </div>
-</template>
+&lt;/script&gt;
+</code></pre><ul>
+<li>&#x4E8B;&#x4EF6;&#x63A5;&#x6536;</li>
+</ul>
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;sun&quot;&gt;
+    &lt;p&gt;{{msg}}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-<p><script>
-import { Bus } from '@/tools/event-bus'
+&lt;script&gt;
+import { Bus } from &apos;@/tools/event-bus&apos;
 export default {
-  name: 'Sun',
+  name: &apos;Sun&apos;,
   data(){
     return {
-      msg:''
+      msg:&apos;&apos;
     }
   },
   methods:{
     setMsg(){
-      Bus.$on("share",(data)=>{
+      Bus.$on(&quot;share&quot;,(data)=&gt;{
         this.msg = data;
       })
     }
@@ -591,14 +615,13 @@ export default {
     this.setMsg();
   },
   destroyed(){
-    Bus.$off("share");
+    Bus.$off(&quot;share&quot;);
   }
 }
-</script>
-```</p>
-<h2>VUEX</h2>
-<p>不在这展开说了，具体使用方法很多博客，官网也有示例</p>
-</style>
+&lt;/script&gt;
+</code></pre><h2 id="vuex">VUEX</h2>
+<p>&#x4E0D;&#x5728;&#x8FD9;&#x5C55;&#x5F00;&#x8BF4;&#x4E86;&#xFF0C;&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x5F88;&#x591A;&#x535A;&#x5BA2;&#xFF0C;&#x5B98;&#x7F51;&#x4E5F;&#x6709;&#x793A;&#x4F8B;</p>
+
                                 
                                 </section>
                             
@@ -637,7 +660,7 @@ export default {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"vue组件传值方式整理","level":"1.3.1","depth":2,"previous":{"title":"框架","level":"1.3","depth":1,"path":"frame/README.md","ref":"frame/README.md","articles":[{"title":"vue组件传值方式整理","level":"1.3.1","depth":2,"path":"frame/vue组件传值方式整理.md","ref":"frame/vue组件传值方式整理.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"mingyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"mybook","gitbook":"*","description":"demo"},"file":{"path":"frame/vue组件传值方式整理.md","mtime":"2020-09-01T07:27:07.883Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-01T07:31:22.175Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"vue组件传值方式整理","level":"1.3.1","depth":2,"previous":{"title":"框架","level":"1.3","depth":1,"path":"frame/README.md","ref":"frame/README.md","articles":[{"title":"vue组件传值方式整理","level":"1.3.1","depth":2,"path":"frame/vue组件传值方式整理.md","ref":"frame/vue组件传值方式整理.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"mingyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"mybook","gitbook":"*","description":"demo"},"file":{"path":"frame/vue组件传值方式整理.md","mtime":"2020-09-01T09:48:14.925Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-01T09:55:12.287Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
