@@ -4,7 +4,7 @@
 
 ### 本文使用的gitbook进行编辑
 
-node版本：10.0.0
+node版本：10.12.0
 ```
 npm install -g gitbook-cli //安装gitbook
 gitbook init  //初始化
