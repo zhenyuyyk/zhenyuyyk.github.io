@@ -162,6 +162,7 @@ export default {
 ```
 # 隔代组件传值（爷孙组件参数互传）
 ## $attrs/$listeners
+
 + 爷组件
 
 ```
@@ -266,6 +267,7 @@ export default {
 
 ## provide/inject
 > 提示：provide 和 inject 绑定并不是可响应的。这是刻意为之的。然而，如果你传入了一个可监听的对象，那么其对象的 property 还是可响应的。如果传入的值是字符串，数字，布尔值等基本类型则会无响应！！！
+
 + 祖先组件（所有后代组件都能拿到该值，但传动态值必须是个对象！！！）
 
 ```
@@ -339,6 +341,7 @@ export default {
 # 全局传值
 ## EventBus
 > 调用完之后必须销毁，否则会出现bug！！
+
 + src/tools/event-bus.js(新建文件)
 
 ```
