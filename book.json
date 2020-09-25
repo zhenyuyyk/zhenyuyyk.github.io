@@ -1,8 +1,9 @@
 {
-  "title" : "mybook",
-  "description": "demo",
-  "author" : "mingyue",
+  "title" : "振阵雨的随笔记录",
+  "description": "振阵雨的随笔记录",
+  "author" : "zhenyu",
   "styles": {
     "website": "styles/website.css"
-  }
+  },
+  "plugins": ["toc"]
 }
