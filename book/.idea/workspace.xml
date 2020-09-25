@@ -2,50 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/原型和原型链.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/原型和原型链.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/闭包.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/原型和原型链.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/原型和原型链.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/闭包.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/闭包.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/frame/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/js/Promise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/js/前端路由.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/js/前端路由.md" beforeDir="false" afterPath="$PROJECT_DIR$/book/js/前端路由.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/js/原型和原型链.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/js/浅拷贝和深拷贝.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/book/js/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/book/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/前端路由.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/前端路由.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/原型和原型链.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/原型和原型链.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/闭包.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/闭包.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +70,7 @@
       <workItem from="1598945724242" duration="9000" />
       <workItem from="1598949773973" duration="1216000" />
       <workItem from="1598956623264" duration="12000" />
-      <workItem from="1601019407330" duration="5191000" />
+      <workItem from="1601019407330" duration="5348000" />
     </task>
     <servers />
   </component>
