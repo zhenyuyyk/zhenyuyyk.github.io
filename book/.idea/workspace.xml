@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/前端路由.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/前端路由.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/闭包.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/闭包.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <workItem from="1598945724242" duration="9000" />
       <workItem from="1598949773973" duration="1216000" />
       <workItem from="1598956623264" duration="12000" />
-      <workItem from="1601019407330" duration="5348000" />
+      <workItem from="1601019407330" duration="5549000" />
     </task>
     <servers />
   </component>
