@@ -1,13 +1,5 @@
-<!-- TOC -->
+<!-- toc -->
 
-- [一、Promise的含义](#一promise的含义)
-- [二、手写一个Promise](#二手写一个promise)
-    - [让resolvePromise符合规范](#让resolvepromise符合规范)
-    - [resolve的也是promise](#resolve的也是promise)
-    - [catch方法](#catch方法)
-- [三、完整代码](#三完整代码)
-
-<!-- /TOC -->
 # 一、Promise的含义
 
 Promise 是异步编程的一种解决方案，ES6将其写进了语言标准。所谓Promise就是一个容器，里面保存着未来才会结束的事件（通常是一个异步操作）的结果。

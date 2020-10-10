@@ -21,13 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/lunr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/browser/浏览器缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/browser/浏览器缓存.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Promise.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/Promise.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/前端路由.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/前端路由.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/垃圾回收机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/垃圾回收机制.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/TCP三次握手和四次挥手.md" beforeDir="false" afterPath="$PROJECT_DIR$/network/TCP三次握手和四次挥手.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/传输层协议TCP和UDP.md" beforeDir="false" afterPath="$PROJECT_DIR$/network/传输层协议TCP和UDP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/浅拷贝和深拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/浅拷贝和深拷贝.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/闭包.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/闭包.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/website.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +114,7 @@
       <workItem from="1601373936223" duration="1949000" />
       <workItem from="1602300687558" duration="764000" />
       <workItem from="1602308550494" duration="8049000" />
-      <workItem from="1602317800146" duration="175000" />
+      <workItem from="1602317800146" duration="1928000" />
     </task>
     <servers />
   </component>

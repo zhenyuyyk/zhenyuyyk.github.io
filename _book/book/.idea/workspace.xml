@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/lunr.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/browser/浏览器缓存.md" beforeDir="false" afterPath="$PROJECT_DIR$/browser/浏览器缓存.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/前端路由.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/前端路由.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/垃圾回收机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/垃圾回收机制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/TCP三次握手和四次挥手.md" beforeDir="false" afterPath="$PROJECT_DIR$/network/TCP三次握手和四次挥手.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/network/传输层协议TCP和UDP.md" beforeDir="false" afterPath="$PROJECT_DIR$/network/传输层协议TCP和UDP.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="package.json" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1giZ4WWOPGm4oyOdU2EFR9XNeYU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
+      <recent name="D:\myProject\zhenyuyyk.github.io\styles" />
+      <recent name="D:\myProject\mybook" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="" />
+      <created>1598599183263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598599183263</updated>
+      <workItem from="1598599184355" duration="2601000" />
+      <workItem from="1598605114647" duration="159000" />
+      <workItem from="1598605451520" duration="4778000" />
+      <workItem from="1598835484660" duration="152000" />
+      <workItem from="1598837482046" duration="1291000" />
+      <workItem from="1598840950209" duration="1761000" />
+      <workItem from="1598868003718" duration="1739000" />
+      <workItem from="1598922142938" duration="8000" />
+      <workItem from="1598930021515" duration="1695000" />
+      <workItem from="1598931787027" duration="1033000" />
+      <workItem from="1598938971144" duration="1732000" />
+      <workItem from="1598943740927" duration="1537000" />
+      <workItem from="1598945566560" duration="18000" />
+      <workItem from="1598945724242" duration="9000" />
+      <workItem from="1598949773973" duration="1216000" />
+      <workItem from="1598956623264" duration="12000" />
+      <workItem from="1601019407330" duration="6037000" />
+      <workItem from="1601168886860" duration="802000" />
+      <workItem from="1601169730197" duration="916000" />
+      <workItem from="1601173404779" duration="1425000" />
+      <workItem from="1601174841345" duration="3564000" />
+      <workItem from="1601283728009" duration="570000" />
+      <workItem from="1601284304784" duration="1009000" />
+      <workItem from="1601285320814" duration="1448000" />
+      <workItem from="1601342408540" duration="442000" />
+      <workItem from="1601370927109" duration="1346000" />
+      <workItem from="1601373916741" duration="12000" />
+      <workItem from="1601373936223" duration="1949000" />
+      <workItem from="1602300687558" duration="764000" />
+      <workItem from="1602308550494" duration="8049000" />
+      <workItem from="1602317800146" duration="175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601373927711">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601373927711" />
+  </component>
+</project>

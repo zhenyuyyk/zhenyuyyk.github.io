@@ -1,0 +1,501 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>TCP三次握手和四次挥手 · 阵雨的随笔记录</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhenyu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="传输层协议TCP和UDP.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../js/">
+            
+                <a href="../js/">
+            
+                    
+                    js知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../js/闭包.html">
+            
+                <a href="../js/闭包.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../js/原型和原型链.html">
+            
+                <a href="../js/原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../js/Promise.html">
+            
+                <a href="../js/Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../js/前端路由.html">
+            
+                <a href="../js/前端路由.html">
+            
+                    
+                    前端路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../js/垃圾回收机制.html">
+            
+                <a href="../js/垃圾回收机制.html">
+            
+                    
+                    垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../js/浅拷贝和深拷贝.html">
+            
+                <a href="../js/浅拷贝和深拷贝.html">
+            
+                    
+                    浅拷贝和深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../frame/">
+            
+                <a href="../frame/">
+            
+                    
+                    框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../frame/vue组件传值方式整理.html">
+            
+                <a href="../frame/vue组件传值方式整理.html">
+            
+                    
+                    vue组件传值方式整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../browser/">
+            
+                <a href="../browser/">
+            
+                    
+                    浏览器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../browser/浏览器缓存.html">
+            
+                <a href="../browser/浏览器缓存.html">
+            
+                    
+                    浏览器缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="传输层协议TCP和UDP.html">
+            
+                <a href="传输层协议TCP和UDP.html">
+            
+                    
+                    传输层协议TCP和UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="TCP三次握手和四次挥手.html">
+            
+                <a href="TCP三次握手和四次挥手.html">
+            
+                    
+                    TCP三次握手和四次挥手
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >TCP三次握手和四次挥手</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#tcp&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x548C;&#x56DB;&#x6B21;&#x6325;&#x624B;">TCP&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x548C;&#x56DB;&#x6B21;&#x6325;&#x624B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x4E00;&#x3001;tcp&#x7684;&#x4E09;&#x6B21;&#x63E1;&#x624B;">&#x4E00;&#x3001;TCP&#x7684;&#x4E09;&#x6B21;&#x63E1;&#x624B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF1F;">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF1F;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x4E8C;&#x3001;tcp&#x56DB;&#x6B21;&#x6325;&#x624B;">&#x4E8C;&#x3001;TCP&#x56DB;&#x6B21;&#x6325;&#x624B;</a><i></i></div></li>
+<li><div><a href="#&#x4E3A;&#x4EC0;&#x4E48;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x662F;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF0C;&#x800C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x5374;&#x662F;&#x56DB;&#x6B21;&#x6325;&#x624B;&#x5462;&#xFF1F;">&#x4E3A;&#x4EC0;&#x4E48;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x662F;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF0C;&#x800C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x5374;&#x662F;&#x56DB;&#x6B21;&#x6325;&#x624B;&#x5462;&#xFF1F;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<!-- toc -->
+<h1 id="tcp&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x548C;&#x56DB;&#x6B21;&#x6325;&#x624B;">TCP&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x548C;&#x56DB;&#x6B21;&#x6325;&#x624B;</h1>
+<p><strong>&#x5907;&#x6CE8;&#xFF1A;(&#x4E0B;&#x6587;&#x4E2D;&#x63D0;&#x5230;&#x7684;&#x4E13;&#x4E1A;&#x672F;&#x8BED;)</strong></p>
+<pre><code>ack &#x2014;&#x2014; &#x786E;&#x8BA4;&#x53F7;&#x7801;
+seq &#x2014;&#x2014; &#x987A;&#x5E8F;&#x53F7;&#x7801;
+ISN &#x2014;&#x2014; &#x521D;&#x59CB;&#x5E8F;&#x5217;&#x53F7;
+ACK &#x2014;&#x2014; &#x786E;&#x8BA4;&#xFF0C;&#x4F7F;&#x5F97;&#x786E;&#x8BA4;&#x53F7;&#x6709;&#x6548;&#xFF08;&#x63E1;&#x624B;&#x4F7F;&#x7528;&#xFF09;
+SYN &#x2014;&#x2014; &#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;&#x8FDE;&#x63A5;&#x7684;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x5EFA;&#x7ACB;&#x8054;&#x673A;
+FIN &#x2014;&#x2014; &#x8BE5;&#x62A5;&#x6587;&#x7684;&#x53D1;&#x9001;&#x65B9;&#x5DF2;&#x7ECF;&#x7ED3;&#x675F;&#x5411;&#x5BF9;&#x65B9;&#x53D1;&#x9001;&#x6570;&#x636E;
+</code></pre><h2 id="&#x4E00;&#x3001;tcp&#x7684;&#x4E09;&#x6B21;&#x63E1;&#x624B;">&#x4E00;&#x3001;TCP&#x7684;&#x4E09;&#x6B21;&#x63E1;&#x624B;</h2>
+<p>&#x4E09;&#x6B21;&#x63E1;&#x624B; &#x5B9E;&#x9645;&#x5C31;&#x662F;Client&#x7AEF;&#x548C;Server&#x7AEF;&#x5EFA;&#x7ACB;&#x7A33;&#x5B9A;TCP&#x8FDE;&#x63A5;&#x7684;&#x53D1;&#x9001;&#x4E09;&#x4E2A;&#x5305;&#x7684;&#x8FC7;&#x7A0B;&#x3002;</p>
+<p><img src="../styles/images/woshou.png" alt="Image text"></p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x6B21;&#x63E1;&#x624B;&#xFF1A;(SYN=1, ACK=0, seq=x):<blockquote>
+<p>Client&#x53D1;&#x9001;SYN&#x6807;&#x5FD7;&#x4F4D;1&#x7684;&#x5305;&#x5230;Server&#xFF0C;&#x4EE5;&#x53CA;&#x521D;&#x59CB;&#x5E8F;&#x53F7;x&#xFF08;&#x4FDD;&#x5B58;&#x5728;&#x5305;&#x5934;&#x7684;&#x5E8F;&#x5217;&#x53F7;seq&#x5B57;&#x6BB5;&#xFF0C;&#x7B80;&#x79F0;ISN&#xFF09;&#xFF0C;&#x548C;ACK&#x6807;&#x5FD7;&#x4F4D;&#x4E3A;0&#xFF0C;&#x5E76;&#x8FDB;&#x5165;SYN_SEND&#x72B6;&#x6001;&#xFF0C;&#x7B49;&#x5F85;Server&#x786E;&#x8BA4;&#x3002;</p>
+</blockquote>
+</li>
+<li>&#x7B2C;&#x4E8C;&#x6B21;&#x63E1;&#x624B;&#xFF1A;(SYN=1, ACK=1, seq=y, ack=x+1):<blockquote>
+<p>Server&#x53D1;&#x56DE;&#x786E;&#x8BA4;&#x5305;(ACK)&#x5E94;&#x7B54;&#x3002;&#x5373; SYN &#x6807;&#x5FD7;&#x4F4D;&#x548C; ACK &#x6807;&#x5FD7;&#x4F4D;&#x5747;&#x4E3A;1&#x3002;Server&#x786E;&#x8BA4;ISN&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x653E;&#x5230;seq&#x57DF;&#x91CC;&#xFF0C;&#x540C;&#x65F6;&#x5C06;&#x786E;&#x8BA4;&#x5E8F;&#x53F7;(ack)&#x8BBE;&#x7F6E;&#x4E3A;Client&#x7684;ISN&#x52A0;1&#xFF0C;&#x5373;x+1&#x3002; &#x53D1;&#x9001;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;Server&#x8FDB;&#x5165; SYN_RCVD &#x72B6;&#x6001;&#x3002;</p>
+</blockquote>
+</li>
+<li>&#x7B2C;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF1A;(ACK=1&#xFF0C;seq=x+1&#xFF0C;ack=y+1)    <blockquote>
+<p>Client&#x518D;&#x6B21;&#x53D1;&#x9001;&#x786E;&#x8BA4;&#x5305;(ACK)&#xFF0C;ACK&#x6807;&#x5FD7;&#x4F4D;&#x4E3A;1&#xFF0C;&#x5E76;&#x4E14;&#x628A;Server&#x53D1;&#x6765;ISN&#x7684;&#x5E8F;&#x53F7;&#x5B57;&#x6BB5;+1&#xFF0C;&#x653E;&#x5728;&#x786E;&#x5B9A;&#x5B57;&#x6BB5;&#x4E2D;&#x53D1;&#x9001;&#x7ED9;&#x5BF9;&#x65B9;&#x3002;                                                     </p>
+</blockquote>
+</li>
+</ul>
+<h3 id="&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF1F;">&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF1F;</h3>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF0C;&#x6211;&#x63E1;&#x4E24;&#x6B21;&#x4E0D;&#x884C;&#x5417;&#xFF1F;&#x6211;&#x89C9;&#x5F97;&#x6211;&#x8BF4;&#x53D1;&#xFF0C;&#x4F60;&#x8BF4;&#x597D;&#xFF0C;&#x4E0D;&#x5C31;&#x5B8C;&#x4E86;&#x5417;&#xFF0C;&#x975E;&#x8981;&#x77EB;&#x60C5;&#x4E00;&#x4E0B;&#xFF0C;&#x63E1;&#x7B2C;&#x4E09;&#x6B21;&#x624B;&#x7684;&#x610F;&#x4E49;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</p>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5148;&#x6765;&#x7406;&#x89E3;&#x4E00;&#x4E0B;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x63E1;&#x624B;&#xFF1F;</p>
+<p>&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x901A;&#x4FE1;&#x524D;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#xFF0C;&#x800C;&#x201D;&#x63E1;&#x624B;&#x201C;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x8BC1;&#x660E;&#xFF0C;<strong><em>&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x53D1;&#x9001;&#x80FD;&#x529B;&#x548C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x63A5;&#x53D7;&#x80FD;&#x529B;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x7684;</em></strong>&#xFF0C;&#x8FD9;&#x662F;&#x201D;&#x63E1;&#x624B;&#x201C;&#x6765;&#x8FBE;&#x5230;&#x7684;&#x76EE;&#x7684;&#x3002;</p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x6B21;&#x63E1;&#x624B;:&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x9001;&#x7F51;&#x7EDC;&#x5305;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x6536;&#x5230;&#x4E86;&#xFF0C;&#x8FD9;&#x6837;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x5C31;&#x80FD;&#x8BC1;&#x660E;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x53D1;&#x9001;&#x80FD;&#x529B;&#x3001;&#x4EE5;&#x53CA;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x80FD;&#x529B;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x3002;           </li>
+<li>&#x7B2C;&#x4E8C;&#x6B21;&#x63E1;&#x624B;:&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x5305;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x6536;&#x5230;&#x4E86;&#x3002;&#x8FD9;&#x6837;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x80FD;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;&#xFF1A;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x3001;&#x53D1;&#x9001;&#x80FD;&#x529B;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x3001;&#x53D1;&#x9001;&#x80FD;&#x529B;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x3002; &#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x89C6;&#x89D2;&#x6765;&#x770B;&#xFF0C;&#x6211;&#x63A5;&#x5230;&#x4E86;&#x670D;&#x52A1;&#x7AEF;&#x53D1;&#x9001;&#x8FC7;&#x6765;&#x7684;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x8BF4;&#x660E;&#x670D;&#x52A1;&#x7AEF;&#x63A5;&#x6536;&#x5230;&#x4E86;&#x6211;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x63E1;&#x624B;&#x65F6;&#x53D1;&#x9001;&#x7684;&#x7F51;&#x7EDC;&#x5305;&#xFF0C;&#x5E76;&#x4E14;&#x6210;&#x529F;&#x53D1;&#x9001;&#x4E86;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x8FD9;&#x5C31;&#x8BF4;&#x660E;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x3001;&#x53D1;&#x9001;&#x80FD;&#x529B;&#x6B63;&#x5E38;&#x3002;&#x800C;&#x53E6;&#x4E00;&#x65B9;&#x9762;&#xFF0C;&#x6211;&#x6536;&#x5230;&#x4E86;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x8BF4;&#x660E;&#x6211;&#x7B2C;&#x4E00;&#x6B21;&#x53D1;&#x9001;&#x7684;&#x7F51;&#x7EDC;&#x5305;&#x6210;&#x529F;&#x5230;&#x8FBE;&#x670D;&#x52A1;&#x7AEF;&#xFF0C;&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x81EA;&#x5DF1;&#x7684;&#x53D1;&#x9001;&#x548C;&#x63A5;&#x6536;&#x80FD;&#x529B;&#x4E5F;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x3002;</li>
+<li>&#x7B2C;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x53D1;&#x5305;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x6536;&#x5230;&#x4E86;&#x3002;&#x8FD9;&#x6837;&#x670D;&#x52A1;&#x7AEF;&#x5C31;&#x80FD;&#x5F97;&#x51FA;&#x7ED3;&#x8BBA;&#xFF1A;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x3001;&#x53D1;&#x9001;&#x80FD;&#x529B;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x53D1;&#x9001;&#x3001;&#x63A5;&#x6536;&#x80FD;&#x529B;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x3002; &#x7B2C;&#x4E00;&#x3001;&#x4E8C;&#x6B21;&#x63E1;&#x624B;&#x540E;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x5E76;&#x4E0D;&#x77E5;&#x9053;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x80FD;&#x529B;&#x4EE5;&#x53CA;&#x81EA;&#x5DF1;&#x7684;&#x53D1;&#x9001;&#x80FD;&#x529B;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x3002;&#x800C;&#x5728;&#x7B2C;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x7AEF;&#x6536;&#x5230;&#x4E86;&#x5BA2;&#x6237;&#x7AEF;&#x5BF9;&#x7B2C;&#x4E8C;&#x6B21;&#x63E1;&#x624B;&#x4F5C;&#x7684;&#x56DE;&#x5E94;&#x3002;&#x4ECE;&#x670D;&#x52A1;&#x7AEF;&#x7684;&#x89D2;&#x5EA6;&#xFF0C;&#x6211;&#x5728;&#x7B2C;&#x4E8C;&#x6B21;&#x63E1;&#x624B;&#x65F6;&#x7684;&#x54CD;&#x5E94;&#x6570;&#x636E;&#x53D1;&#x9001;&#x51FA;&#x53BB;&#x4E86;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x63A5;&#x6536;&#x5230;&#x4E86;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x7684;&#x53D1;&#x9001;&#x80FD;&#x529B;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x3002;&#x800C;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x63A5;&#x6536;&#x80FD;&#x529B;&#x4E5F;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x3002;</li>
+</ul>
+<h2 id="&#x4E8C;&#x3001;tcp&#x56DB;&#x6B21;&#x6325;&#x624B;">&#x4E8C;&#x3001;TCP&#x56DB;&#x6B21;&#x6325;&#x624B;</h2>
+<p>&#x56DB;&#x6B21;&#x6325;&#x624B;&#xFF0C;&#x5B9E;&#x9645;&#x5C31;&#x662F;Client&#x7AEF;&#x548C;Server&#x7AEF;&#x5173;&#x95ED;TCP&#x8FDE;&#x63A5;&#x7684;&#x53D1;&#x9001;&#x56DB;&#x4E2A;&#x5305;&#x7684;&#x8FC7;&#x7A0B;&#x3002;
+<img src="../styles/images/huishou.png" alt="Image text">      </p>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x6B21;&#x6325;&#x624B;(FIN=1&#xFF0C;seq=u)<blockquote>
+<p>Client &#x60F3;&#x8981;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#xFF0C;Client &#x4F1A;&#x53D1;&#x9001;&#x4E00;&#x4E2A;FIN&#x6807;&#x5FD7;&#x4F4D;&#x7F6E;&#x4E3A;1&#xFF0C;&#x5F53;&#x524D;&#x5E8F;&#x5217;&#x53F7;&#x4E3A;u&#x7684;&#x5305;&#xFF0C;&#x8868;&#x793A;&#x9700;&#x8981;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x4E86;&#x3002;Client&#x8FDB;&#x5165; FIN_WAIT_1 &#x72B6;&#x6001;&#x3002;</p>
+</blockquote>
+</li>
+<li>&#x7B2C;&#x4E8C;&#x6B21;&#x6325;&#x624B;(ACK=1&#xFF0C;seq=v&#xFF0C;ack=u+1)<blockquote>
+<p>Server&#x6536;&#x5230;Client&#x7684;FIN&#x5305;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x786E;&#x8BA4;&#x5E8F;&#x53F7;&#x4E3A;&#x6536;&#x5230;&#x7684;&#x5E8F;&#x5217;&#x53F7;u+1&#x7684;&#x5305;&#xFF0C;&#x8868;&#x660E;&#x81EA;&#x5DF1;&#x63A5;&#x53D7;&#x5230;&#x4E86;Client&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x7684;&#x8BF7;&#x6C42;&#xFF0C;&#x4F46;&#x8FD8;&#x672A;&#x51C6;&#x5907;&#x597D;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x3002;Server&#x8FDB;&#x5165; CLOSE_WAIT &#x72B6;&#x6001;&#xFF0C;Client&#x8FDB;&#x5165; FIN_WAIT_2 &#x72B6;&#x6001;&#x3002;</p>
+</blockquote>
+</li>
+<li>&#x7B2C;&#x4E09;&#x6B21;&#x6325;&#x624B;(FIN=1&#xFF0C;ACK=1&#xFF0C;seq=w&#xFF0C;ack=u+1)<blockquote>
+<p>&#x5F53;Server&#x5C06;&#x5269;&#x4F59;&#x6570;&#x636E;&#x53D1;&#x9001;&#x5B8C;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x53D1;&#x9001;&#x4E00;&#x4E2A;&#x81EA;&#x5DF1;&#x7684;FIN&#x5305;&#xFF0C;&#x5E8F;&#x5217;&#x53F7;&#x4E3A;u+1&#x3002;Server&#x8FDB;&#x5165; LAST_ACK &#x72B6;&#x6001;&#xFF0C;&#x7B49;&#x5F85;&#x6765;&#x81EA;Client&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;ACK&#x3002;</p>
+</blockquote>
+</li>
+<li>&#x7B2C;&#x56DB;&#x6B21;&#x6325;&#x624B;(ACK=1&#xFF0C;seq=u+1&#xFF0C;ack=w+1)<blockquote>
+<p>Client&#x63A5;&#x6536;&#x5230;&#x6765;&#x81EA;Server&#x7AEF;&#x7684;&#x5173;&#x95ED;&#x8BF7;&#x6C42;&#x4E4B;&#x540E;&#xFF0C;&#x53D1;&#x9001;&#x6700;&#x540E;&#x4E00;&#x4E2A;ACK&#x786E;&#x8BA4;&#x5305;&#xFF0C;&#x786E;&#x8BA4;&#x5E8F;&#x53F7;&#x8BBE;&#x7F6E;&#x4E3A;&#x6536;&#x5230;&#x5E8F;&#x53F7;&#x52A0;1&#x3002;Client&#x8FDB;&#x5165; TIME_WAIT&#x72B6;&#x6001;&#xFF0C;&#x7B49;&#x5F85;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x8981;&#x6C42;&#x91CD;&#x4F20;&#x7684; ACK &#x5305;&#x3002;Server&#x63A5;&#x6536;&#x5230;&#x8FD9;&#x4E2A;&#x786E;&#x8BA4;&#x5305;&#x4E4B;&#x540E;&#xFF0C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#xFF0C;&#x8FDB;&#x5165;CLOSED&#x72B6;&#x6001;&#x3002;(Client&#x4F1A;&#x7B49;&#x5F85;2MSL&#x4E4B;&#x540E;&#xFF0C;&#x6CA1;&#x6709;&#x6536;&#x5230;Server&#x7684;ACK &#xFF0C;&#x5C31;&#x786E;&#x8BA4;Server&#x8FDB;&#x5165;CLOSED&#x72B6;&#x6001;&#xFF0C;&#x81EA;&#x5DF1;&#x4E5F;&#x5173;&#x95ED;&#x8FDB;&#x5165;CLOSED&#x72B6;&#x6001;&#x3002;)</p>
+</blockquote>
+</li>
+</ul>
+<p>&#x53D1;&#x9001;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;Client&#x548C;Server&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#xFF0C;TCP &#x6325;&#x624B;&#x7ED3;&#x675F;&#x3002;</p>
+<h2 id="&#x4E3A;&#x4EC0;&#x4E48;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x662F;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF0C;&#x800C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x5374;&#x662F;&#x56DB;&#x6B21;&#x6325;&#x624B;&#x5462;&#xFF1F;">&#x4E3A;&#x4EC0;&#x4E48;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x662F;&#x4E09;&#x6B21;&#x63E1;&#x624B;&#xFF0C;&#x800C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x5374;&#x662F;&#x56DB;&#x6B21;&#x6325;&#x624B;&#x5462;&#xFF1F;</h2>
+<p>&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x670D;&#x52A1;&#x7AEF;&#x5728;LISTEN&#xFF08;&#x76D1;&#x542C;&#xFF09;&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x6536;&#x5230;&#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#x7684;SYN&#x62A5;&#x6587;&#x540E;&#xFF0C;&#x628A;ACK&#x548C;SYN&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x62A5;&#x6587;&#x91CC;&#x53D1;&#x9001;&#x7ED9;&#x5BA2;&#x6237;&#x7AEF;&#x3002;&#x800C;&#x5173;&#x95ED;&#x8FDE;&#x63A5;&#x65F6;&#xFF0C;&#x5F53;&#x6536;&#x5230;&#x5BF9;&#x65B9;&#x7684;FIN&#x62A5;&#x6587;&#x65F6;&#xFF0C;&#x4EC5;&#x4EC5;&#x8868;&#x793A;&#x5BF9;&#x65B9;&#x4E0D;&#x518D;&#x53D1;&#x9001;&#x6570;&#x636E;&#x4E86;&#x4F46;&#x662F;&#x8FD8;&#x80FD;&#x63A5;&#x6536;&#x6570;&#x636E;&#xFF0C;&#x5DF1;&#x65B9;&#x662F;&#x5426;&#x73B0;&#x5728;&#x5173;&#x95ED;&#x53D1;&#x9001;&#x6570;&#x636E;&#x901A;&#x9053;&#xFF0C;&#x9700;&#x8981;&#x4E0A;&#x5C42;&#x5E94;&#x7528;&#x6765;&#x51B3;&#x5B9A;&#xFF0C;&#x56E0;&#x6B64;&#xFF0C;&#x5DF1;&#x65B9;ACK&#x548C;FIN&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x5206;&#x5F00;&#x53D1;&#x9001;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="传输层协议TCP和UDP.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 传输层协议TCP和UDP">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TCP三次握手和四次挥手","level":"1.5.2","depth":2,"previous":{"title":"传输层协议TCP和UDP","level":"1.5.1","depth":2,"path":"network/传输层协议TCP和UDP.md","ref":"network/传输层协议TCP和UDP.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-treeview","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"network/TCP三次握手和四次挥手.md","mtime":"2020-10-10T08:19:35.180Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-10T08:58:36.847Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

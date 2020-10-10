@@ -1,17 +1,5 @@
-<!-- TOC -->
+<!-- toc -->
 
-- [vue组件传值方式整理](#vue组件传值方式整理)
-- [父子组件传值](#父子组件传值)
-    - [props/$emit](#propsemit)
-    - [ref与$parent/$children](#ref与parentchildren)
-- [隔代组件传值（爷孙组件参数互传）](#隔代组件传值爷孙组件参数互传)
-    - [$attrs/$listeners](#attrslisteners)
-    - [provide/inject](#provideinject)
-- [全局传值](#全局传值)
-    - [EventBus](#eventbus)
-    - [VUEX](#vuex)
-
-<!-- /TOC -->
 # vue组件传值方式整理
 # 父子组件传值
 ## props/$emit

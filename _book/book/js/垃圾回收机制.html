@@ -1,0 +1,595 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>垃圾回收机制 · 阵雨的随笔记录</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="zhenyu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="浅拷贝和深拷贝.html" />
+    
+    
+    <link rel="prev" href="前端路由.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    js知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="闭包.html">
+            
+                <a href="闭包.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="原型和原型链.html">
+            
+                <a href="原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Promise.html">
+            
+                <a href="Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="前端路由.html">
+            
+                <a href="前端路由.html">
+            
+                    
+                    前端路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="垃圾回收机制.html">
+            
+                <a href="垃圾回收机制.html">
+            
+                    
+                    垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="浅拷贝和深拷贝.html">
+            
+                <a href="浅拷贝和深拷贝.html">
+            
+                    
+                    浅拷贝和深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../frame/">
+            
+                <a href="../frame/">
+            
+                    
+                    框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../frame/vue组件传值方式整理.html">
+            
+                <a href="../frame/vue组件传值方式整理.html">
+            
+                    
+                    vue组件传值方式整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../browser/">
+            
+                <a href="../browser/">
+            
+                    
+                    浏览器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../browser/浏览器缓存.html">
+            
+                <a href="../browser/浏览器缓存.html">
+            
+                    
+                    浏览器缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../network/">
+            
+                <a href="../network/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../network/传输层协议TCP和UDP.html">
+            
+                <a href="../network/传输层协议TCP和UDP.html">
+            
+                    
+                    传输层协议TCP和UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../network/TCP三次握手和四次挥手.html">
+            
+                <a href="../network/TCP三次握手和四次挥手.html">
+            
+                    
+                    TCP三次握手和四次挥手
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >垃圾回收机制</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <!-- toc -->
+<ul>
+<li><a href="#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</a><ul>
+<li><a href="#%E4%B8%80%E3%80%81%E5%86%85%E5%AD%98">&#x4E00;&#x3001;&#x5185;&#x5B58;</a></li>
+<li><a href="#%E4%BA%8C%E3%80%81%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0">&#x4E8C;&#x3001;&#x5F15;&#x7528;&#x8BA1;&#x6570;</a><ul>
+<li><a href="#1.%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E7%BC%BA%E9%99%B7">1.&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x7F3A;&#x9677;</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89%E3%80%81%E6%A0%87%E8%AE%B0-%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95">&#x4E09;&#x3001;&#x6807;&#x8BB0;-&#x6E05;&#x9664;&#x7B97;&#x6CD5;</a><ul>
+<li><a href="#1.%E6%A0%87%E8%AE%B0-%E6%B8%85%E6%A5%9A%E7%AE%97%E6%B3%95%E7%BC%BA%E9%99%B7">1.&#x6807;&#x8BB0;-&#x6E05;&#x695A;&#x7B97;&#x6CD5;&#x7F3A;&#x9677;</a></li>
+<li><a href="#2.%E5%B8%B8%E8%A7%81%E7%9A%84%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F">2.&#x5E38;&#x89C1;&#x7684;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9B%E3%80%81javascript-v8%E5%BC%95%E6%93%8E%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">&#x56DB;&#x3001;JavaScript V8&#x5F15;&#x64CE;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</a><ul>
+<li><a href="#1.%E5%88%86%E4%BB%A3%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">1.&#x5206;&#x4EE3;&#x56DE;&#x6536;&#x673A;&#x5236;</a></li>
+<li><a href="#2.v8%E5%86%85%E5%AD%98%E9%99%90%E5%88%B6">2.V8&#x5185;&#x5B58;&#x9650;&#x5236;</a></li>
+<li><a href="#3.v8%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E6%9C%89%E5%86%85%E5%AD%98%E9%99%90%E5%88%B6">3.V8&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;&#x5185;&#x5B58;&#x9650;&#x5236;</a></li>
+<li><a href="#4.v8%E6%96%B0%E7%94%9F%E4%BB%A3%E7%AE%97%E6%B3%95%EF%BC%88scavenge%EF%BC%89">4.V8&#x65B0;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;Scavenge&#xFF09;</a>
+~ <a href="#%E6%99%8B%E5%8D%87">&#x664B;&#x5347;</a></li>
+<li><a href="#5.v8%E8%80%81%E7%94%9F%E4%BB%A3%E7%AE%97%E6%B3%95%EF%BC%88mark-sweep%EF%BC%8Cmark-compact%EF%BC%89">5.V8&#x8001;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;Mark-Sweep&#xFF0C;Mark-Compact&#xFF09;</a>
+~ <a href="#mark-sweep(%E6%A0%87%E8%AE%B0--%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95">Mark-Sweep(&#x6807;&#x8BB0;- &#x6E05;&#x9664;&#x7B97;&#x6CD5;)</a>)
+~ <a href="#mark-compact(%E6%A0%87%E8%AE%B0-%E6%95%B4%E7%90%86%E7%AE%97%E6%B3%95">Mark-Compact(&#x6807;&#x8BB0;-&#x6574;&#x7406;&#x7B97;&#x6CD5;)</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;">&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</h1>
+<p>&#x5783;&#x573E;&#x56DE;&#x6536;&#x53C8;&#x79F0;&#x4E3A; GC(Garbage Collecation)&#x3002;&#x7F16;&#x5199; JavaScript &#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x8DDF;&#x8E2A;&#x5185;&#x5B58;&#x7684;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#xFF0C;&#x53EA;&#x8981;&#x6309;&#x7167;&#x6807;&#x51C6;&#x5199; JavaScript &#x4EE3;&#x7801;&#xFF0C;JavaScript &#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6240;&#x9700;&#x5185;&#x5B58;&#x7684;&#x5206;&#x914D;&#x4EE5;&#x53CA;&#x65E0;&#x7528;&#x5185;&#x5B58;&#x7684;&#x56DE;&#x6536;&#x5B8C;&#x5168;&#x662F;&#x81EA;&#x52A8;&#x7BA1;&#x7406;&#x3002;JavaScript &#x4E2D;&#x81EA;&#x52A8;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#x7684;&#x539F;&#x7406;&#x4E3A;&#xFF1A;</p>
+<blockquote>
+<p>&#x627E;&#x51FA;&#x90A3;&#x4E9B;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x7136;&#x540E;&#x91CA;&#x653E;&#x5176;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x3002;
+&#x5783;&#x573E;&#x6536;&#x96C6;&#x5668;&#x4F1A;&#x6309;&#x7167;&#x56FA;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;(&#x6216;&#x9884;&#x5B9A;&#x7684;&#x6536;&#x96C6;&#x65F6;&#x95F4;)&#x5468;&#x671F;&#x6027;&#x5730;&#x6267;&#x884C;&#x6B64;&#x64CD;&#x4F5C;&#x3002;</p>
+</blockquote>
+<p>&#x5E38;&#x7528;&#x5230;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x65B9;&#x5F0F;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>&#x5F15;&#x7528;&#x8BA1;&#x6570;</li>
+<li>&#x6807;&#x8BB0;&#x6E05;&#x9664;</li>
+</ul>
+<h2 id="&#x4E00;&#x3001;&#x5185;&#x5B58;">&#x4E00;&#x3001;&#x5185;&#x5B58;</h2>
+<p>&#x8981;&#x60F3;&#x4E86;&#x89E3;JavaScript&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x77E5;&#x9053;&#x5185;&#x5B58;&#x7684;&#x6982;&#x5FF5;&#x3002;JavaScript&#x4E2D;&#x7684;&#x5185;&#x5B58;&#x5206;&#x4E3A;&#x6808;&#x5185;&#x5B58;&#x4E0E;&#x5806;&#x5185;&#x5B58;</p>
+<ul>
+<li>&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x503C;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5360;&#x56FA;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x7A7A;&#x95F4;&#xFF0C;&#x56E0;&#x6B64;&#x88AB;&#x4FDD;&#x5B58;&#x5728;<strong>&#x6808;&#x5185;&#x5B58;</strong>&#x4E2D;</li>
+<li>&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x503C;&#x662F;&#x5BF9;&#x8C61;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;<strong>&#x5806;&#x5185;&#x5B58;</strong>&#x4E2D;&#x3002;&#x5305;&#x542B;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x503C;&#x7684;&#x53D8;&#x91CF;&#x5B9E;&#x9645;&#x5305;&#x542B;&#x5E76;&#x975E;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#xFF0C;&#x800C;&#x662F;&#x6307;&#x5411;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x3002;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x4ECE;&#x53E6;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x590D;&#x5236;&#x5F15;&#x7528;&#x7C7B;&#x578B;&#x7684;&#x503C;&#x65F6;&#xFF0C;&#x590D;&#x5236;&#x7684;&#x4E5F;&#x662F;&#x6307;&#x5411;&#x8BE5;&#x5BF9;&#x8C61;&#x7684;&#x6307;&#x9488;&#x3002;</li>
+</ul>
+<h2 id="&#x4E8C;&#x3001;&#x5F15;&#x7528;&#x8BA1;&#x6570;">&#x4E8C;&#x3001;&#x5F15;&#x7528;&#x8BA1;&#x6570;</h2>
+<p>&#x8FD9;&#x662F;&#x6700;&#x521D;&#x7EA7;&#x7684;&#x5783;&#x573E;&#x6536;&#x96C6;&#x7B97;&#x6CD5;&#xFF0C;&#x5728;IE9&#x4E4B;&#x524D;&#x91C7;&#x7528;&#x3002;&#x6B64;&#x7B97;&#x6CD5;&#x628A;&#x201C;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x201D;&#x7B80;&#x5316;&#x5B9A;&#x4E49;&#x4E3A;&#x201C;&#x5BF9;&#x8C61;&#x6709;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x5230;&#x5B83;&#x201D;&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5F15;&#x7528;&#x6307;&#x5411;&#x8BE5;&#x5BF9;&#x8C61;&#xFF08;&#x96F6;&#x5F15;&#x7528;&#xFF09;&#xFF0C;&#x5BF9;&#x8C61;&#x5C06;&#x88AB;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#x56DE;&#x6536;&#x3002;</p>
+<pre><code>function test () {
+      var a = {} //  a&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x4E3A; 0,
+      var b = a // a &#x88AB; b &#x5F15;&#x7528; a&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x4E3A; 1
+      let c = a // a &#x88AB; c &#x5F15;&#x7528; a&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x4E3A; 2
+      b = null // b &#x4E0D;&#x518D;&#x5F15;&#x7528;a a&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x51CF;&#x4E3A; 1
+      c = null // c&#x4E0D;&#x518D;&#x5F15;&#x7528;a a&#x7684;&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x51CF;&#x4E3A; 0 &#x5C06;&#x88AB;&#x56DE;&#x6536;
+}
+</code></pre><h3 id="1&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x7F3A;&#x9677;">1.&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x7F3A;&#x9677;</h3>
+<p>&#x8BE5;&#x7B97;&#x6CD5;&#x6709;&#x4E2A;&#x6700;&#x5927;&#x7684;&#x7F3A;&#x9677;&#xFF1A;&#x65E0;&#x6CD5;&#x5904;&#x7406;&#x5FAA;&#x73AF;&#x5F15;&#x7528;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>function problem(){
+    var a = new Object();
+    var b = new Object();
+    a.test = b;
+    b.test = a;
+}
+</code></pre><p>&#x4E0A;&#x9762;a,b&#x4E92;&#x76F8;&#x5F15;&#x7528;,&#x8BA1;&#x6570;&#x4E0D;&#x4F1A;&#x7B49;&#x4E8E;0,&#x5185;&#x5B58;&#x4E0D;&#x4F1A;&#x56DE;&#x6536;,&#x91CD;&#x590D;&#x8C03;&#x7528;,&#x4F1A;&#x5360;&#x7528;&#x5927;&#x91CF;&#x5185;&#x5B58;&#x3002;</p>
+<h2 id="&#x4E09;&#x3001;&#x6807;&#x8BB0;-&#x6E05;&#x9664;&#x7B97;&#x6CD5;">&#x4E09;&#x3001;&#x6807;&#x8BB0;-&#x6E05;&#x9664;&#x7B97;&#x6CD5;</h2>
+<p>&#x6B64;&#x7B97;&#x6CD5;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x9636;&#x6BB5;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6807;&#x8BB0;&#x9636;&#x6BB5;&#xFF08;mark&#xFF09;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x6E05;&#x9664;&#x9636;&#x6BB5;(sweep)&#x3002;</p>
+<ol>
+<li><strong>&#x6807;&#x8BB0;&#x9636;&#x6BB5;</strong>&#xFF0C;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;&#x4F1A;&#x4ECE;&#x6839;&#x5BF9;&#x8C61;&#x5F00;&#x59CB;&#x904D;&#x5386;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x4ECE;&#x6839;&#x5BF9;&#x8C61;&#x8BBF;&#x95EE;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x4F1A;&#x88AB;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x6807;&#x8BC6;&#xFF0C;&#x4E8E;&#x662F;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5C31;&#x88AB;&#x6807;&#x8BC6;&#x4E3A;&#x53EF;&#x5230;&#x8FBE;&#x5BF9;&#x8C61;&#x3002;</li>
+<li><strong>&#x6E05;&#x9664;&#x9636;&#x6BB5;</strong>&#xFF0C;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;&#x4F1A;&#x5BF9;&#x5806;&#x5185;&#x5B58;&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x8FDB;&#x884C;&#x7EBF;&#x6027;&#x904D;&#x5386;&#xFF0C;&#x5982;&#x679C;&#x53D1;&#x73B0;&#x6709;&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x88AB;&#x6807;&#x8BC6;&#x4E3A;&#x53EF;&#x5230;&#x8FBE;&#x5BF9;&#x8C61;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5C06;&#x6B64;&#x5BF9;&#x8C61;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x56DE;&#x6536;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x539F;&#x6765;&#x6807;&#x8BB0;&#x4E3A;&#x53EF;&#x5230;&#x8FBE;&#x5BF9;&#x8C61;&#x7684;&#x6807;&#x8BC6;&#x6E05;&#x9664;&#xFF0C;&#x4EE5;&#x4FBF;&#x8FDB;&#x884C;&#x4E0B;&#x4E00;&#x6B21;&#x5783;&#x573E;&#x56DE;&#x6536;&#x64CD;&#x4F5C;&#x3002;</li>
+</ol>
+<p>&#x7B80;&#x5355;&#x6765;&#x8BF4;&#x5C31;&#x662F;&#xFF1A;&#x628A;&#x6240;&#x6709;&#x6D3B;&#x52A8;&#x5BF9;&#x8C61;&#x505A;&#x4E0A;&#x6807;&#x8BB0;,&#x628A;&#x6CA1;&#x6709;&#x6807;&#x8BB0;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x975E;&#x6D3B;&#x52A8;&#x5BF9;&#x8C61;&#xFF09;&#x9500;&#x6BC1;
+<img src="../styles/images/marksweep.gif" alt="Image text">  </p>
+<h3 id="1&#x6807;&#x8BB0;-&#x6E05;&#x695A;&#x7B97;&#x6CD5;&#x7F3A;&#x9677;">1.&#x6807;&#x8BB0;-&#x6E05;&#x695A;&#x7B97;&#x6CD5;&#x7F3A;&#x9677;</h3>
+<ul>
+<li>&#x90A3;&#x4E9B;&#x65E0;&#x6CD5;&#x4ECE;&#x6839;&#x5BF9;&#x8C61;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x5C06;&#x88AB;&#x6E05;&#x9664;</li>
+<li>&#x5783;&#x573E;&#x6536;&#x96C6;&#x540E;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x5927;&#x91CF;&#x7684;&#x5185;&#x5B58;&#x788E;&#x7247;&#xFF0C;&#x50CF;&#x4E0A;&#x9762;&#x7684;&#x56FE;&#x7247;&#x6240;&#x793A;&#xFF0C;&#x5783;&#x573E;&#x6536;&#x96C6;&#x540E;&#x5185;&#x5B58;&#x4E2D;&#x5B58;&#x5728;&#x4E09;&#x4E2A;&#x5185;&#x5B58;&#x788E;&#x7247;&#xFF0C;&#x5047;&#x8BBE;&#x4E00;&#x4E2A;&#x65B9;&#x683C;&#x4EE3;&#x8868;1&#x4E2A;&#x5355;&#x4F4D;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x9700;&#x8981;&#x5360;&#x7528;3&#x4E2A;&#x5185;&#x5B58;&#x5355;&#x4F4D;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x4F1A;&#x5BFC;&#x81F4;Mutator&#x4E00;&#x76F4;&#x5904;&#x4E8E;&#x6682;&#x505C;&#x72B6;&#x6001;&#xFF0C;&#x800C;Collector&#x4E00;&#x76F4;&#x5728;&#x5C1D;&#x8BD5;&#x8FDB;&#x884C;&#x5783;&#x573E;&#x6536;&#x96C6;&#xFF0C;&#x76F4;&#x5230;Out of Memory&#x3002;</li>
+</ul>
+<h3 id="2&#x5E38;&#x89C1;&#x7684;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;">2.&#x5E38;&#x89C1;&#x7684;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;</h3>
+<p>Foo &#x88AB;&#x8C03;&#x7528;&#x65F6;, this &#x6307;&#x5411;&#x5168;&#x5C40;&#x53D8;&#x91CF;(window),&#x76F8;&#x5F53;&#x4E8E;&#x4E0E;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;,&#x53D8;&#x91CF;&#x4E0D;&#x4F1A;&#x88AB;&#x56DE;&#x6536;</p>
+<pre><code>function test() {
+    this.test = &quot;lala&quot;;
+}
+foo();
+</code></pre><p>&#x5F53;&#x8282;&#x70B9;&#x88AB;&#x5E72;&#x6389;,&#x5B9A;&#x65F6;&#x5668;&#x8FD8;&#x662F;&#x4F1A;&#x4E0D;&#x505C;&#x6267;&#x884C;</p>
+<pre><code>setInterval(function() {
+    var node = document.getElementById(&apos;div&apos;);
+    if(node) {
+        node.innerHTML = &quot;!.......&quot;
+    }
+}, 5000);
+</code></pre><p>&#x95ED;&#x5305;</p>
+<pre><code>var add = (function () {
+    var num = 0;
+    return function () {
+        return ++num;
+    };
+  })();
+console.log(add());
+console.log(add());
+console.log(add());
+</code></pre><h2 id="&#x56DB;&#x3001;javascript-v8&#x5F15;&#x64CE;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;">&#x56DB;&#x3001;JavaScript V8&#x5F15;&#x64CE;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</h2>
+<p>&#x5728;JavaScript&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x5BF9;&#x8C61;&#x7684;&#x751F;&#x5B58;&#x671F;&#x5F88;&#x77ED;&#xFF0C;&#x53EA;&#x6709;&#x90E8;&#x5206;&#x5BF9;&#x8C61;&#x7684;&#x751F;&#x5B58;&#x671F;&#x8F83;&#x957F;&#x3002;&#x6240;&#x4EE5;&#xFF0C;V8 &#x4E2D;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x4E3B;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x662F; <strong>&#x5206;&#x4EE3;&#x56DE;&#x6536;</strong> (Generational collection)&#x673A;&#x5236;&#x3002;</p>
+<h3 id="1&#x5206;&#x4EE3;&#x56DE;&#x6536;&#x673A;&#x5236;">1.&#x5206;&#x4EE3;&#x56DE;&#x6536;&#x673A;&#x5236;</h3>
+<p>V8 &#x5F15;&#x64CE;&#x5C06;&#x4FDD;&#x5B58;&#x5BF9;&#x8C61;&#x7684; <strong>&#x5806;</strong> (heap) &#x8FDB;&#x884C;&#x4E86;&#x5206;&#x4EE3;:</p>
+<ul>
+<li>&#x5BF9;&#x8C61;&#x6700;&#x521D;&#x4F1A;&#x88AB;&#x5206;&#x5728; <strong>&#x65B0;&#x751F;&#x533A;</strong>(New Space) (1~8M)&#xFF0C;&#x65B0;&#x751F;&#x533A;&#x7684;&#x5185;&#x5B58;&#x5206;&#x914D;&#x53EA;&#x9700;&#x8981;&#x4FDD;&#x6709;&#x4E00;&#x4E2A;&#x6307;&#x5411;&#x5185;&#x5B58;&#x533A;&#x7684;&#x6307;&#x9488;&#xFF0C;&#x4E0D;&#x65AD;&#x6839;&#x636E;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x8FDB;&#x884C;&#x9012;&#x589E;&#xFF0C;&#x5F53;&#x6307;&#x9488;&#x8FBE;&#x5230;&#x65B0;&#x751F;&#x533A;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x4F1A;&#x6709;&#x4E00;&#x6B21;&#x5783;&#x573E;&#x56DE;&#x6536;&#x6E05;&#x7406;(&#x5C0F;&#x5468;&#x671F;)&#xFF0C;&#x6E05;&#x7406;&#x6389;&#x65B0;&#x751F;&#x533A;&#x4E2D;&#x4E0D;&#x518D;&#x6D3B;&#x8DC3;&#x7684;&#x6B7B;&#x5BF9;&#x8C61;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x8D85;&#x8FC7; 2 &#x4E2A;&#x5C0F;&#x5468;&#x671F;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5C06;&#x5176;&#x79FB;&#x52A8;&#x81F3; <strong>&#x8001;&#x751F;&#x533A;</strong>(Old Space)&#x3002;&#x8001;&#x751F;&#x533A;&#x5728; &#x6807;&#x8BB0;-&#x6E05;&#x9664; &#x6216; &#x6807;&#x8BB0;-&#x7D27;&#x7F29; &#x7684;&#x8FC7;&#x7A0B;(&#x5927;&#x5468;&#x671F;) &#x4E2D;&#x8FDB;&#x884C;&#x56DE;&#x6536;&#x3002;</li>
+</ul>
+<p>&#x5927;&#x5468;&#x671F;&#x8FDB;&#x884C;&#x7684;&#x5E76;&#x4E0D;&#x9891;&#x7E41;&#x3002;&#x4E00;&#x6B21;&#x5927;&#x5468;&#x671F;&#x901A;&#x5E38;&#x662F;&#x5728;&#x79FB;&#x52A8;&#x8DB3;&#x591F;&#x591A;&#x7684;&#x5BF9;&#x8C61;&#x81F3;&#x8001;&#x751F;&#x533A;&#x540E;&#x624D;&#x4F1A;&#x53D1;&#x751F;&#x3002;</p>
+<h3 id="2v8&#x5185;&#x5B58;&#x9650;&#x5236;">2.V8&#x5185;&#x5B58;&#x9650;&#x5236;</h3>
+<p>&#x5728;node&#x4E2D;javascript&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x5185;&#x5B58;&#x662F;&#x6709;&#x9650;&#x5236;&#x7684;</p>
+<blockquote>
+<ol>
+<li>64&#x4F4D;&#x7CFB;&#x7EDF;&#x4E0B;&#x7EA6;&#x4E3A;1.4GB&#x3002;</li>
+<li>32&#x4F4D;&#x7CFB;&#x7EDF;&#x4E0B;&#x7EA6;&#x4E3A;0.7GB&#x3002;</li>
+</ol>
+</blockquote>
+<p>&#x5BF9;&#x5E94;&#x5230;&#x5206;&#x4EE3;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#x3002;</p>
+<blockquote>
+<ol>
+<li>2&#x4F4D;&#x7CFB;&#x7EDF;&#x65B0;&#x751F;&#x4EE3;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x4E3A;16MB&#xFF0C;&#x8001;&#x751F;&#x4EE3;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x4E3A;700MB&#x3002; </li>
+<li>64&#x4F4D;&#x7CFB;&#x7EDF;&#x4E0B;&#xFF0C;&#x65B0;&#x751F;&#x4EE3;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x4E3A;32MB&#xFF0C;&#x8001;&#x751F;&#x4EE3;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x4E3A;1.4GB&#x3002;</li>
+</ol>
+</blockquote>
+<p>&#x65B0;&#x751F;&#x4EE3;&#x5E73;&#x5747;&#x5206;&#x6210;&#x4E24;&#x5757;&#x76F8;&#x7B49;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF0C;&#x53EB;&#x505A;semispace&#xFF0C;&#x6BCF;&#x5757;&#x5185;&#x5B58;&#x5927;&#x5C0F;8MB&#xFF08;32&#x4F4D;&#xFF09;&#x6216;16MB&#xFF08;64&#x4F4D;&#xFF09;&#x3002;</p>
+<h3 id="3v8&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;&#x5185;&#x5B58;&#x9650;&#x5236;">3.V8&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;&#x5185;&#x5B58;&#x9650;&#x5236;</h3>
+<p>&#x8868;&#x9762;&#x4E0A;&#x7684;&#x539F;&#x56E0;&#x662F;V8&#x6700;&#x521D;&#x662F;&#x4F5C;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x7684;JavaScript&#x5F15;&#x64CE;&#x800C;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E0D;&#x592A;&#x53EF;&#x80FD;&#x9047;&#x5230;&#x5927;&#x91CF;&#x5185;&#x5B58;&#x7684;&#x573A;&#x666F;&#x3002;</p>
+<p>&#x800C;&#x6DF1;&#x5C42;&#x6B21;&#x7684;&#x539F;&#x56E0;&#x5219;&#x662F;&#x7531;&#x4E8E;V8&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#x7684;&#x9650;&#x5236;&#x3002;&#x7531;&#x4E8E;V8&#x9700;&#x8981;&#x4FDD;&#x8BC1;JavaScript&#x5E94;&#x7528;&#x903B;&#x8F91;&#x4E0E;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;&#x6240;&#x770B;&#x5230;&#x7684;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;V8&#x5728;&#x6267;&#x884C;&#x5783;&#x573E;&#x56DE;&#x6536;&#x65F6;&#x4F1A;&#x963B;&#x585E;JavaScript&#x5E94;&#x7528;&#x903B;&#x8F91;&#xFF0C;&#x76F4;&#x5230;&#x5783;&#x573E;&#x56DE;&#x6536;&#x7ED3;&#x675F;&#x518D;&#x91CD;&#x65B0;&#x6267;&#x884C;JavaScript&#x5E94;&#x7528;&#x903B;&#x8F91;&#xFF0C;&#x8FD9;&#x79CD;&#x884C;&#x4E3A;&#x88AB;&#x79F0;&#x4E3A;&#x201C;&#x5168;&#x505C;&#x987F;&#x201D;&#xFF08;stop-the-world&#xFF09;&#x3002;</p>
+<p>&#x82E5;V8&#x7684;&#x5806;&#x5185;&#x5B58;&#x4E3A;1.5GB&#xFF0C;V8&#x505A;&#x4E00;&#x6B21;&#x5C0F;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x9700;&#x8981;50ms&#x4EE5;&#x4E0A;&#xFF0C;&#x505A;&#x4E00;&#x6B21;&#x975E;&#x589E;&#x91CF;&#x5F0F;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x751A;&#x81F3;&#x8981;1&#x79D2;&#x4EE5;&#x4E0A;&#x3002;</p>
+<p>&#x8FD9;&#x6837;&#x6D4F;&#x89C8;&#x5668;&#x5C06;&#x5728;1s&#x5185;&#x5931;&#x53BB;&#x5BF9;&#x7528;&#x6237;&#x7684;&#x54CD;&#x5E94;&#xFF0C;&#x9020;&#x6210;&#x5047;&#x6B7B;&#x73B0;&#x8C61;&#x3002;&#x5982;&#x679C;&#x6709;&#x52A8;&#x753B;&#x6548;&#x679C;&#x7684;&#x8BDD;&#xFF0C;&#x52A8;&#x753B;&#x7684;&#x5C55;&#x73B0;&#x4E5F;&#x5C06;&#x663E;&#x8457;&#x53D7;&#x5230;&#x5F71;&#x54CD;&#x3002;</p>
+<h3 id="4v8&#x65B0;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;scavenge&#xFF09;">4.V8&#x65B0;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;Scavenge&#xFF09;</h3>
+<p>&#x7531;&#x4E8E;&#x5783;&#x573E;&#x6E05;&#x7406;&#x53D1;&#x751F;&#x7684;&#x6BD4;&#x8F83;&#x9891;&#x7E41;&#xFF0C;&#x6E05;&#x7406;&#x7684;&#x8FC7;&#x7A0B;&#x5FC5;&#x987B;&#x5F88;&#x5FEB;&#x3002;V8 &#x4E2D;&#x7684;&#x6E05;&#x7406;&#x8FC7;&#x7A0B;&#x4F7F;&#x7528;&#x7684;&#x662F; Scavenge &#x7B97;&#x6CD5;&#xFF0C;&#x6309;&#x7167; &#x7ECF;&#x5178;&#x7684; <strong>Cheney &#x7B97;&#x6CD5;</strong> &#x5B9E;&#x73B0;&#x7684;&#x3002;Scavenge &#x7B97;&#x6CD5;&#x7684;&#x4E3B;&#x8981;&#x8FC7;&#x7A0B;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x65B0;&#x751F;&#x533A;&#x88AB;&#x5206;&#x4E3A;&#x4E24;&#x4E2A;&#x7B49;&#x5927;&#x5C0F;&#x7684;&#x5B50;&#x533A;(semi-spaces)&#xFF1A;to-space &#x548C; from-space&#xFF1B;</li>
+<li>&#x5927;&#x591A;&#x6570;&#x7684;&#x5185;&#x5B58;&#x5206;&#x914D;&#x90FD;&#x662F;&#x5728; to-space &#x53D1;&#x751F; (&#x67D0;&#x4E9B;&#x7279;&#x5B9A;&#x5BF9;&#x8C61;&#x662F;&#x5728;&#x8001;&#x751F;&#x533A;)&#xFF1B;</li>
+<li>&#x5F53; to-space &#x8017;&#x5C3D;&#x65F6;&#xFF0C;&#x4EA4;&#x6362; to-space &#x548C; from-space, &#x6B64;&#x65F6;&#x6240;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x5728; from-space&#xFF1B;</li>
+<li>&#x7136;&#x540E;&#x5C06; from-space &#x4E2D;&#x6D3B;&#x8DC3;&#x7684;&#x5BF9;&#x8C61;&#x590D;&#x5236;&#x5230; to-space &#x6216;&#x8005;&#x8001;&#x751F;&#x533A;&#x4E2D;;</li>
+<li>&#x8FD9;&#x4E9B;&#x5BF9;&#x8C61;&#x88AB;&#x76F4;&#x63A5;&#x538B;&#x5230; to-space&#xFF0C;&#x63D0;&#x5347;&#x4E86; Cache &#x7684;&#x5185;&#x5B58;&#x5C40;&#x90E8;&#x6027;&#xFF0C;&#x53EF;&#x4F7F;&#x5185;&#x5B58;&#x5206;&#x914D;&#x7B80;&#x6D01;&#x5FEB;&#x901F;&#x3002; </li>
+</ul>
+<p><img src="../styles/images/tofrom.png" alt="Image text">  </p>
+<p><strong>Scavenge&#x7B97;&#x6CD5;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#x53EA;&#x80FD;&#x4F7F;&#x7528;&#x5806;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x4E00;&#x534A;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x5B83;&#x53EA;&#x590D;&#x5236;&#x5B58;&#x6D3B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x4E8E;&#x751F;&#x547D;&#x5468;&#x671F;&#x77ED;&#x7684;&#x573A;&#x666F;&#x5B58;&#x6D3B;&#x5BF9;&#x8C61;&#x53EA;&#x5360;&#x5C11;&#x90E8;&#x5206;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x65F6;&#x95F4;&#x6548;&#x7387;&#x4E0A;&#x6709;&#x7740;&#x4F18;&#x5F02;&#x7684;&#x8868;&#x73B0;&#x3002;</strong></p>
+<h4 id="&#x664B;&#x5347;">&#x664B;&#x5347;</h4>
+<p>&#x4EE5;&#x4E0A;&#x6240;&#x8BF4;&#x7684;&#x662F;&#x5728;&#x7EAF;Scavenge&#x7B97;&#x6CD5;&#x4E2D;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5206;&#x4EE3;&#x5F0F;&#x5783;&#x573E;&#x56DE;&#x6536;&#x7684;&#x524D;&#x63D0;&#x4E0B;&#xFF0C;From&#x7A7A;&#x95F4;&#x4E2D;&#x5B58;&#x6D3B;&#x7684;&#x5BF9;&#x8C61;&#x5728;&#x590D;&#x5236;&#x5230;To&#x7A7A;&#x95F4;&#x4E4B;&#x524D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x68C0;&#x67E5;&#xFF0C;<strong>&#x5728;&#x4E00;&#x5B9A;&#x6761;&#x4EF6;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x5C06;&#x5B58;&#x6D3B;&#x5468;&#x671F;&#x8F83;&#x957F;&#x7684;&#x5BF9;&#x8C61;&#x79FB;&#x52A8;&#x5230;&#x8001;&#x751F;&#x4EE3;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x79F0;&#x4E3A;&#x5BF9;&#x8C61;&#x664B;&#x5347;&#x3002;</strong></p>
+<p>&#x5BF9;&#x8C61;&#x664B;&#x5347;&#x7684;&#x6761;&#x4EF6;&#x6709;&#x4E24;&#x4E2A;:</p>
+<ol>
+<li>&#x4E00;&#x79CD;&#x662F;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x7ECF;&#x5386;&#x8FC7;Scacenge&#x56DE;&#x6536;
+<img src="../styles/images/jinsheng1.png" alt="Image text"></li>
+<li>&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x662F;&#x5F53;To&#x7A7A;&#x95F4;&#x7684;&#x4F7F;&#x7528;&#x5E94;&#x8D85;&#x8FC7;25%&#x65F6;&#xFF0C;&#x5219;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x76F4;&#x63A5;&#x664B;&#x5347;&#x5230;&#x8001;&#x751F;&#x4EE3;&#x7A7A;&#x95F4;&#x4E2D;&#x3002;
+<img src="../styles/images/jinsheng2.png" alt="Image text"></li>
+</ol>
+<h3 id="5v8&#x8001;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;mark-sweep&#xFF0C;mark-compact&#xFF09;">5.V8&#x8001;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;Mark-Sweep&#xFF0C;Mark-Compact&#xFF09;</h3>
+<p>&#x5728;&#x8001;&#x751F;&#x4EE3;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x7531;&#x4E8E;&#x5B58;&#x6D3B;&#x5BF9;&#x8C61;&#x5360;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x518D;&#x91C7;&#x7528;Scavenge&#x65B9;&#x5F0F;&#x4F1A;&#x6709;&#x4E24;&#x4E2A;&#x95EE;&#x9898;&#xFF1A;</p>
+<ul>
+<li>&#x4E00;&#x4E2A;&#x662F;&#x5B58;&#x6D3B;&#x5BF9;&#x8C61;&#x5C31;&#x8F83;&#x591A;&#xFF0C;&#x590D;&#x5236;&#x5B58;&#x6D3B;&#x5BF9;&#x8C61;&#x7684;&#x6548;&#x7387;&#x5C06;&#x4F1A;&#x964D;&#x4F4E;&#xFF1B;</li>
+<li>scavenge&#x662F;&#x727A;&#x7272;&#x7A7A;&#x95F4;&#x6765;&#x6362;&#x53D6;&#x65F6;&#x95F4;&#x6548;&#x7387;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x800C;&#x8001;&#x751F;&#x4EE3;&#x652F;&#x6301;&#x7684;&#x5BB9;&#x91CF;&#x8F83;&#x5927;&#xFF0C;&#x4F1A;&#x51FA;&#x73B0;&#x7A7A;&#x95F4;&#x8D44;&#x6E90;&#x6D6A;&#x8D39;&#x95EE;&#x9898;</li>
+</ul>
+<p>&#x4E3A;&#x6B64;&#xFF0C;V8&#x5728;&#x8001;&#x751F;&#x4EE3;&#x4E2D;&#x4E3B;&#x8981;&#x91C7;&#x7528;Mark-Sweep&#x548C;Mark-Compact&#x76F8;&#x7ED3;&#x5408;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x5783;&#x573E;&#x56DE;&#x6536;&#x3002;</p>
+<h4 id="mark-sweep&#x6807;&#x8BB0;--&#x6E05;&#x9664;&#x7B97;&#x6CD5;">Mark-Sweep(&#x6807;&#x8BB0;- &#x6E05;&#x9664;&#x7B97;&#x6CD5;)</h4>
+<p>&#x8FD9;&#x4E2A;&#x7B97;&#x6CD5;&#x4E0A;&#x6587;&#x6709;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;&#x8FD9;&#x91CC;&#x518D;&#x8BF4;&#x4E00;&#x4E0B;&#x3002;</p>
+<ul>
+<li>&#x6807;&#x8BB0;&#x9636;&#x6BB5;&#xFF1A;&#x5BF9;&#x8001;&#x751F;&#x4EE3;&#x8FDB;&#x884C;&#x7B2C;&#x4E00;&#x6B21;&#x626B;&#x63CF;&#xFF0C;&#x6807;&#x8BB0;&#x6D3B;&#x52A8;&#x5BF9;&#x8C61;</li>
+<li>&#x6E05;&#x7406;&#x9636;&#x6BB5;&#xFF1A;&#x5BF9;&#x8001;&#x751F;&#x4EE3;&#x8FDB;&#x884C;&#x7B2C;&#x4E8C;&#x6B21;&#x626B;&#x63CF;&#xFF0C;&#x6E05;&#x9664;&#x672A;&#x88AB;&#x6807;&#x8BB0;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5373;&#x6E05;&#x7406;&#x975E;&#x6D3B;&#x52A8;&#x5BF9;&#x8C61;
+<img src="../styles/images/biaojiqingchu1.png" alt="Image text">
+&#x8FD8;&#x9057;&#x7559;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x88AB;&#x6E05;&#x9664;&#x7684;&#x5BF9;&#x8C61;&#x904D;&#x5E03;&#x4E8E;&#x5404;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x4EA7;&#x751F;&#x5F88;&#x591A;&#x5185;&#x5B58;&#x788E;&#x7247;&#x3002;&#x6240;&#x4EE5;&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#x63D0;&#x51FA;<strong>Mark-Compact</strong>&#x7B97;&#x6CD5;&#x3002;<h4 id="mark-compact&#x6807;&#x8BB0;-&#x6574;&#x7406;&#x7B97;&#x6CD5;">Mark-Compact(&#x6807;&#x8BB0;-&#x6574;&#x7406;&#x7B97;&#x6CD5;)</h4>
+</li>
+</ul>
+<p>&#x7531;&#x4E8E;Mark-Sweep&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x8001;&#x751F;&#x4EE3;&#x7684;&#x5185;&#x5B58;&#x4E2D;&#x4EA7;&#x751F;&#x4E86;&#x5F88;&#x591A;&#x5185;&#x5B58;&#x788E;&#x7247;&#xFF0C;&#x82E5;&#x4E0D;&#x6E05;&#x7406;&#x8FD9;&#x4E9B;&#x5185;&#x5B58;&#x788E;&#x7247;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x9700;&#x8981;&#x5206;&#x914D;&#x4E00;&#x4E2A;&#x5927;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x65F6;&#x6240;&#x6709;&#x7684;&#x788E;&#x7247;&#x7A7A;&#x95F4;&#x90FD;&#x5B8C;&#x5168;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x5206;&#x914D;&#xFF0C;&#x5C31;&#x4F1A;&#x63D0;&#x524D;&#x89E6;&#x53D1;&#x5783;&#x573E;&#x56DE;&#x6536;&#xFF0C;&#x800C;&#x8FD9;&#x6B21;&#x56DE;&#x6536;&#x5176;&#x5B9E;&#x4E0D;&#x662F;&#x5FC5;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x5185;&#x5B58;&#x788E;&#x7247;&#x95EE;&#x9898;&#xFF0C;Mark-Compact&#x88AB;&#x63D0;&#x51FA;&#xFF0C;&#x5B83;&#x662F;&#x5728; Mark-Sweep&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x6F14;&#x8FDB;&#x800C;&#x6765;&#x7684;&#xFF0C;&#x76F8;&#x6BD4;Mark-Sweep&#xFF0C;Mark-Compact&#x6DFB;&#x52A0;&#x4E86;&#x6D3B;&#x52A8;&#x5BF9;&#x8C61;&#x6574;&#x7406;&#x9636;&#x6BB5;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x7684;&#x6D3B;&#x52A8;&#x5BF9;&#x8C61;&#x5F80;&#x4E00;&#x7AEF;&#x79FB;&#x52A8;&#xFF0C;&#x79FB;&#x52A8;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x76F4;&#x63A5;&#x6E05;&#x7406;&#x6389;&#x8FB9;&#x754C;&#x5916;&#x7684;&#x5185;&#x5B58;&#x3002;
+<img src="../styles/images/biaojiqingchu2.png" alt="Image text"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="前端路由.html" class="navigation navigation-prev " aria-label="Previous page: 前端路由">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="浅拷贝和深拷贝.html" class="navigation navigation-next " aria-label="Next page: 浅拷贝和深拷贝">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"垃圾回收机制","level":"1.2.5","depth":2,"next":{"title":"浅拷贝和深拷贝","level":"1.2.6","depth":2,"path":"js/浅拷贝和深拷贝.md","ref":"js/浅拷贝和深拷贝.md","articles":[]},"previous":{"title":"前端路由","level":"1.2.4","depth":2,"path":"js/前端路由.md","ref":"js/前端路由.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"toc":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"js/垃圾回收机制.md","mtime":"2020-10-10T08:18:40.586Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-10T08:20:06.582Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

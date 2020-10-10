@@ -5,5 +5,5 @@
   "styles": {
     "website": "styles/website.css"
   },
-  "plugins": ["toc"]
+  "plugins": ["page-treeview"]
 }
