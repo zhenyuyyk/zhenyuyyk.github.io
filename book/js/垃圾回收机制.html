@@ -345,7 +345,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;">&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</h1>
+                                <!-- toc -->
+<ul>
+<li><a href="#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</a><ul>
+<li><a href="#%E4%B8%80%E3%80%81%E5%86%85%E5%AD%98">&#x4E00;&#x3001;&#x5185;&#x5B58;</a></li>
+<li><a href="#%E4%BA%8C%E3%80%81%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0">&#x4E8C;&#x3001;&#x5F15;&#x7528;&#x8BA1;&#x6570;</a><ul>
+<li><a href="#1.%E5%BC%95%E7%94%A8%E8%AE%A1%E6%95%B0%E7%BC%BA%E9%99%B7">1.&#x5F15;&#x7528;&#x8BA1;&#x6570;&#x7F3A;&#x9677;</a></li>
+</ul>
+</li>
+<li><a href="#%E4%B8%89%E3%80%81%E6%A0%87%E8%AE%B0-%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95">&#x4E09;&#x3001;&#x6807;&#x8BB0;-&#x6E05;&#x9664;&#x7B97;&#x6CD5;</a><ul>
+<li><a href="#1.%E6%A0%87%E8%AE%B0-%E6%B8%85%E6%A5%9A%E7%AE%97%E6%B3%95%E7%BC%BA%E9%99%B7">1.&#x6807;&#x8BB0;-&#x6E05;&#x695A;&#x7B97;&#x6CD5;&#x7F3A;&#x9677;</a></li>
+<li><a href="#2.%E5%B8%B8%E8%A7%81%E7%9A%84%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F">2.&#x5E38;&#x89C1;&#x7684;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9B%9B%E3%80%81javascript-v8%E5%BC%95%E6%93%8E%E7%9A%84%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">&#x56DB;&#x3001;JavaScript V8&#x5F15;&#x64CE;&#x7684;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</a><ul>
+<li><a href="#1.%E5%88%86%E4%BB%A3%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">1.&#x5206;&#x4EE3;&#x56DE;&#x6536;&#x673A;&#x5236;</a></li>
+<li><a href="#2.v8%E5%86%85%E5%AD%98%E9%99%90%E5%88%B6">2.V8&#x5185;&#x5B58;&#x9650;&#x5236;</a></li>
+<li><a href="#3.v8%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E6%9C%89%E5%86%85%E5%AD%98%E9%99%90%E5%88%B6">3.V8&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;&#x5185;&#x5B58;&#x9650;&#x5236;</a></li>
+<li><a href="#4.v8%E6%96%B0%E7%94%9F%E4%BB%A3%E7%AE%97%E6%B3%95%EF%BC%88scavenge%EF%BC%89">4.V8&#x65B0;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;Scavenge&#xFF09;</a>
+~ <a href="#%E6%99%8B%E5%8D%87">&#x664B;&#x5347;</a></li>
+<li><a href="#5.v8%E8%80%81%E7%94%9F%E4%BB%A3%E7%AE%97%E6%B3%95%EF%BC%88mark-sweep%EF%BC%8Cmark-compact%EF%BC%89">5.V8&#x8001;&#x751F;&#x4EE3;&#x7B97;&#x6CD5;&#xFF08;Mark-Sweep&#xFF0C;Mark-Compact&#xFF09;</a>
+~ <a href="#mark-sweep(%E6%A0%87%E8%AE%B0--%E6%B8%85%E9%99%A4%E7%AE%97%E6%B3%95">Mark-Sweep(&#x6807;&#x8BB0;- &#x6E05;&#x9664;&#x7B97;&#x6CD5;)</a>)
+~ <a href="#mark-compact(%E6%A0%87%E8%AE%B0-%E6%95%B4%E7%90%86%E7%AE%97%E6%B3%95">Mark-Compact(&#x6807;&#x8BB0;-&#x6574;&#x7406;&#x7B97;&#x6CD5;)</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1 id="&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;">&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;</h1>
 <p>&#x5783;&#x573E;&#x56DE;&#x6536;&#x53C8;&#x79F0;&#x4E3A; GC(Garbage Collecation)&#x3002;&#x7F16;&#x5199; JavaScript &#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x4E0D;&#x9700;&#x8981;&#x624B;&#x5DE5;&#x8DDF;&#x8E2A;&#x5185;&#x5B58;&#x7684;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#xFF0C;&#x53EA;&#x8981;&#x6309;&#x7167;&#x6807;&#x51C6;&#x5199; JavaScript &#x4EE3;&#x7801;&#xFF0C;JavaScript &#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x6240;&#x9700;&#x5185;&#x5B58;&#x7684;&#x5206;&#x914D;&#x4EE5;&#x53CA;&#x65E0;&#x7528;&#x5185;&#x5B58;&#x7684;&#x56DE;&#x6536;&#x5B8C;&#x5168;&#x662F;&#x81EA;&#x52A8;&#x7BA1;&#x7406;&#x3002;JavaScript &#x4E2D;&#x81EA;&#x52A8;&#x5783;&#x573E;&#x56DE;&#x6536;&#x673A;&#x5236;&#x7684;&#x539F;&#x7406;&#x4E3A;&#xFF1A;</p>
 <blockquote>
 <p>&#x627E;&#x51FA;&#x90A3;&#x4E9B;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x7136;&#x540E;&#x91CA;&#x653E;&#x5176;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x3002;
@@ -528,7 +556,7 @@ console.log(add());
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"垃圾回收机制","level":"1.2.5","depth":2,"next":{"title":"浅拷贝和深拷贝","level":"1.2.6","depth":2,"path":"js/浅拷贝和深拷贝.md","ref":"js/浅拷贝和深拷贝.md","articles":[]},"previous":{"title":"前端路由","level":"1.2.4","depth":2,"path":"js/前端路由.md","ref":"js/前端路由.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"toc":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"js/垃圾回收机制.md","mtime":"2020-09-29T10:29:48.084Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-10T07:42:05.227Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"垃圾回收机制","level":"1.2.5","depth":2,"next":{"title":"浅拷贝和深拷贝","level":"1.2.6","depth":2,"path":"js/浅拷贝和深拷贝.md","ref":"js/浅拷贝和深拷贝.md","articles":[]},"previous":{"title":"前端路由","level":"1.2.4","depth":2,"path":"js/前端路由.md","ref":"js/前端路由.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"toc":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"js/垃圾回收机制.md","mtime":"2020-10-10T08:18:40.586Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-10T08:20:06.582Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
