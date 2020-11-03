@@ -20,14 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
+      <change afterPath="$PROJECT_DIR$/styles/images/xy1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/xy2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/frame/vue组件传值方式整理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Promise.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/Promise.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/前端路由.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/前端路由.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/浅拷贝和深拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/浅拷贝和深拷贝.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/闭包.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/闭包.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/website.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gitlabProject/masterdata" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -114,7 +111,14 @@
       <workItem from="1601373936223" duration="1949000" />
       <workItem from="1602300687558" duration="764000" />
       <workItem from="1602308550494" duration="8049000" />
-      <workItem from="1602317800146" duration="1928000" />
+      <workItem from="1602317800146" duration="2666000" />
+      <workItem from="1602643407911" duration="1789000" />
+      <workItem from="1602654434633" duration="293000" />
+      <workItem from="1602654739928" duration="1223000" />
+      <workItem from="1603092175756" duration="6239000" />
+      <workItem from="1603248598921" duration="2290000" />
+      <workItem from="1604383045929" duration="1836000" />
+      <workItem from="1604385733076" duration="390000" />
     </task>
     <servers />
   </component>
@@ -137,9 +141,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601373927711">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604386122372">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601373927711" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604386122372" />
   </component>
 </project>

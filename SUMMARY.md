@@ -8,6 +8,7 @@
     * [前端路由](js/前端路由.md)
     * [垃圾回收机制](js/垃圾回收机制.md)
     * [浅拷贝和深拷贝](js/浅拷贝和深拷贝.md)
+    * [函数式编程](js/函数式编程.md)
 * [框架](frame/README.md)
     * [vue组件传值方式整理](frame/vue组件传值方式整理.md)
 * [浏览器](browser/README.md)
