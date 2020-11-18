@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/styles/images/xy1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/xy2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/duojincheng.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/mvvm.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gitlabProject/masterdata" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -119,6 +118,13 @@
       <workItem from="1603248598921" duration="2290000" />
       <workItem from="1604383045929" duration="1836000" />
       <workItem from="1604385733076" duration="390000" />
+      <workItem from="1604392029619" duration="921000" />
+      <workItem from="1604451769910" duration="594000" />
+      <workItem from="1604454255144" duration="220000" />
+      <workItem from="1604456211923" duration="2795000" />
+      <workItem from="1605600058303" duration="2215000" />
+      <workItem from="1605664082299" duration="1655000" />
+      <workItem from="1605665863487" duration="1427000" />
     </task>
     <servers />
   </component>
@@ -141,9 +147,13 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1604386122372">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605605613461">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1604386122372" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605605613461" />
+    <state x="467" y="144" width="602" height="536" key="find.popup" timestamp="1604393209980">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="467" y="144" width="602" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604393209980" />
   </component>
 </project>
