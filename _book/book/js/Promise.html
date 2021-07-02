@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -186,6 +190,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.7" data-path="函数式编程.html">
+            
+                <a href="函数式编程.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="常见知识点整理.html">
+            
+                <a href="常见知识点整理.html">
+            
+                    
+                    常见知识点整理
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -243,6 +273,19 @@
             
                     
                     浏览器缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../browser/浏览器的多进程和js的单线程.html">
+            
+                <a href="../browser/浏览器的多进程和js的单线程.html">
+            
+                    
+                    浏览器的多进程和js的单线程
             
                 </a>
             
@@ -345,18 +388,19 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <!-- TOC -->
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#&#x4E00;&#x3001;promise&#x7684;&#x542B;&#x4E49;">&#x4E00;&#x3001;Promise&#x7684;&#x542B;&#x4E49;</a><i></i></div></li>
+<li><div><a href="#&#x4E8C;&#x3001;&#x624B;&#x5199;&#x4E00;&#x4E2A;promise">&#x4E8C;&#x3001;&#x624B;&#x5199;&#x4E00;&#x4E2A;Promise</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
 <ul>
-<li><a href="#&#x4E00;promise&#x7684;&#x542B;&#x4E49;">&#x4E00;&#x3001;Promise&#x7684;&#x542B;&#x4E49;</a></li>
-<li><a href="#&#x4E8C;&#x624B;&#x5199;&#x4E00;&#x4E2A;promise">&#x4E8C;&#x3001;&#x624B;&#x5199;&#x4E00;&#x4E2A;Promise</a><ul>
-<li><a href="#&#x8BA9;resolvepromise&#x7B26;&#x5408;&#x89C4;&#x8303;">&#x8BA9;resolvePromise&#x7B26;&#x5408;&#x89C4;&#x8303;</a></li>
-<li><a href="#resolve&#x7684;&#x4E5F;&#x662F;promise">resolve&#x7684;&#x4E5F;&#x662F;promise</a></li>
-<li><a href="#catch&#x65B9;&#x6CD5;">catch&#x65B9;&#x6CD5;</a></li>
+<li><div><a href="#&#x8BA9;resolvepromise&#x7B26;&#x5408;&#x89C4;&#x8303;">&#x8BA9;resolvePromise&#x7B26;&#x5408;&#x89C4;&#x8303;</a><i></i></div></li>
+<li><div><a href="#resolve&#x7684;&#x4E5F;&#x662F;promise">resolve&#x7684;&#x4E5F;&#x662F;promise</a><i></i></div></li>
+<li><div><a href="#catch&#x65B9;&#x6CD5;">catch&#x65B9;&#x6CD5;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x4E09;&#x3001;&#x5B8C;&#x6574;&#x4EE3;&#x7801;">&#x4E09;&#x3001;&#x5B8C;&#x6574;&#x4EE3;&#x7801;</a><i></i></div></li>
 </ul>
-</li>
-<li><a href="#&#x4E09;&#x5B8C;&#x6574;&#x4EE3;&#x7801;">&#x4E09;&#x3001;&#x5B8C;&#x6574;&#x4EE3;&#x7801;</a></li>
-</ul>
-<!-- /TOC -->
+</div>
+
+<!-- toc -->
 <h1 id="&#x4E00;&#x3001;promise&#x7684;&#x542B;&#x4E49;">&#x4E00;&#x3001;Promise&#x7684;&#x542B;&#x4E49;</h1>
 <p>Promise &#x662F;&#x5F02;&#x6B65;&#x7F16;&#x7A0B;&#x7684;&#x4E00;&#x79CD;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;ES6&#x5C06;&#x5176;&#x5199;&#x8FDB;&#x4E86;&#x8BED;&#x8A00;&#x6807;&#x51C6;&#x3002;&#x6240;&#x8C13;Promise&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5BB9;&#x5668;&#xFF0C;&#x91CC;&#x9762;&#x4FDD;&#x5B58;&#x7740;&#x672A;&#x6765;&#x624D;&#x4F1A;&#x7ED3;&#x675F;&#x7684;&#x4E8B;&#x4EF6;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF09;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
 <p><strong>Promise&#x5BF9;&#x8C61;&#x6709;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x7279;&#x70B9;&#xFF1A;</strong></p>
@@ -850,7 +894,7 @@ class myPromise {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Promise","level":"1.2.3","depth":2,"next":{"title":"前端路由","level":"1.2.4","depth":2,"path":"js/前端路由.md","ref":"js/前端路由.md","articles":[]},"previous":{"title":"原型和原型链","level":"1.2.2","depth":2,"path":"js/原型和原型链.md","ref":"js/原型和原型链.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"toc":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"js/Promise.md","mtime":"2020-09-03T05:54:55.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-10-10T08:20:06.582Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Promise","level":"1.2.3","depth":2,"next":{"title":"前端路由","level":"1.2.4","depth":2,"path":"js/前端路由.md","ref":"js/前端路由.md","articles":[]},"previous":{"title":"原型和原型链","level":"1.2.2","depth":2,"path":"js/原型和原型链.md","ref":"js/原型和原型链.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-treeview"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"js/Promise.md","mtime":"2020-10-10T08:56:35.261Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-11-18T02:52:07.068Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
