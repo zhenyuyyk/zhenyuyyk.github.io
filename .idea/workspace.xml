@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/发布-订阅模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/design/发布-订阅模式.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design/适配器模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/design/适配器模式.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +136,7 @@
       <workItem from="1625189643126" duration="2875000" />
       <workItem from="1625203747916" duration="7661000" />
       <workItem from="1625447330138" duration="2983000" />
-      <workItem from="1625461681571" duration="1663000" />
+      <workItem from="1625461681571" duration="8945000" />
     </task>
     <servers />
   </component>
