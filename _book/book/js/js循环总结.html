@@ -1,0 +1,614 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>js循环总结 · 阵雨的随笔记录</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="zhenyu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../frame/" />
+    
+    
+    <link rel="prev" href="常见知识点整理.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    js知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="闭包.html">
+            
+                <a href="闭包.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="原型和原型链.html">
+            
+                <a href="原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Promise.html">
+            
+                <a href="Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="前端路由.html">
+            
+                <a href="前端路由.html">
+            
+                    
+                    前端路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="垃圾回收机制.html">
+            
+                <a href="垃圾回收机制.html">
+            
+                    
+                    垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="浅拷贝和深拷贝.html">
+            
+                <a href="浅拷贝和深拷贝.html">
+            
+                    
+                    浅拷贝和深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="函数式编程.html">
+            
+                <a href="函数式编程.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="网络安全.html">
+            
+                <a href="网络安全.html">
+            
+                    
+                    网络安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="常见知识点整理.html">
+            
+                <a href="常见知识点整理.html">
+            
+                    
+                    常见知识点整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.10" data-path="js循环总结.html">
+            
+                <a href="js循环总结.html">
+            
+                    
+                    js循环总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../frame/">
+            
+                <a href="../frame/">
+            
+                    
+                    框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../frame/vue组件传值方式整理.html">
+            
+                <a href="../frame/vue组件传值方式整理.html">
+            
+                    
+                    vue组件传值方式整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../design/">
+            
+                <a href="../design/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../design/发布-订阅模式.html">
+            
+                <a href="../design/发布-订阅模式.html">
+            
+                    
+                    发布-订阅模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../design/适配器模式.html">
+            
+                <a href="../design/适配器模式.html">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../browser/">
+            
+                <a href="../browser/">
+            
+                    
+                    浏览器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../browser/浏览器缓存.html">
+            
+                <a href="../browser/浏览器缓存.html">
+            
+                    
+                    浏览器缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../browser/浏览器的多进程和js的单线程.html">
+            
+                <a href="../browser/浏览器的多进程和js的单线程.html">
+            
+                    
+                    浏览器的多进程和js的单线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../network/">
+            
+                <a href="../network/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../network/传输层协议TCP和UDP.html">
+            
+                <a href="../network/传输层协议TCP和UDP.html">
+            
+                    
+                    传输层协议TCP和UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../network/TCP三次握手和四次挥手.html">
+            
+                <a href="../network/TCP三次握手和四次挥手.html">
+            
+                    
+                    TCP三次握手和四次挥手
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >js循环总结</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank" _target="blank">aleen42</a></span></div><ul>
+<li><div><a href="#map">map</a><i></i></div></li>
+<li><div><a href="#foreach">forEach</a><i></i></div></li>
+<li><div><a href="#for-in">for in</a><i></i></div></li>
+<li><div><a href="#for-of">for of</a><i></i></div></li>
+</ul>
+</div>
+
+<h1 id="map">map</h1>
+<p>&#x7279;&#x6027;&#xFF1A;</p>
+<ol>
+<li>map&#x4E0D;&#x6539;&#x53D8;&#x539F;&#x6570;&#x7EC4;&#xFF0C;&#x4F1A;&#x8FD4;&#x56DE;&#x65B0;&#x6570;&#x7EC4;</li>
+<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;break&#x4E2D;&#x65AD;&#x5FAA;&#x73AF;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;return&#x8FD4;&#x56DE;&#x5230;&#x5916;&#x5C42;&#x51FD;&#x6570;</li>
+</ol>
+<p>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]
+<span class="hljs-keyword">let</span> newarr = arr.map(i =&gt; {
+    <span class="hljs-keyword">return</span> i += <span class="hljs-number">1</span>;
+    <span class="hljs-built_in">console</span>.log(i);
+})
+<span class="hljs-built_in">console</span>.log(arr)<span class="hljs-comment">//1,3,4---&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x539F;&#x6570;&#x7EC4;</span>
+<span class="hljs-built_in">console</span>.log(newarr)<span class="hljs-comment">//[2,4,5]---&#x8FD4;&#x56DE;&#x65B0;&#x6570;&#x7EC4;</span>
+</code></pre>
+<h1 id="foreach">forEach</h1>
+<p>&#x7279;&#x6027;&#xFF1A;</p>
+<ol>
+<li>&#x4EE3;&#x7801;&#x7B80;&#x6D01;&#xFF0C;&#x6548;&#x7387;&#x9AD8;&#xFF0C;&#x4E0D;&#x7528;&#x5173;&#x5FC3;&#x96C6;&#x5408;&#x4E0B;&#x6807;&#x7684;&#x95EE;&#x9898;</li>
+<li>&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x503C;</li>
+<li>&#x4E0D;&#x80FD;&#x4F7F;&#x7528;break&#x4E2D;&#x65AD;&#x5FAA;&#x73AF;&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;return&#x8FD4;&#x56DE;&#x5230;&#x5916;&#x5C42;&#x51FD;&#x6570;</li>
+<li>&#x5BF9;&#x4E8E;&#x7A7A;&#x6570;&#x7EC4;&#x662F;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x7684;</li>
+<li>&#x4E0D;&#x80FD;&#x4F7F;&#x7528;continue&#x8DF3;&#x8FC7;&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;&#xFF08;&#x533A;&#x522B;&#x4E8E;for&#x5FAA;&#x73AF;&#xFF09;,&#x9700;&#x8981;&#x7528; return &#x8DF3;&#x8FC7;&#x5FAA;&#x73AF;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x8FED;&#x4EE3;</li>
+</ol>
+<p>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>]
+<span class="hljs-keyword">let</span> newarr = arr.forEach(i =&gt; {
+    i += <span class="hljs-number">1</span>;
+    <span class="hljs-built_in">console</span>.log(i);<span class="hljs-comment">//2,4,5</span>
+})
+<span class="hljs-built_in">console</span>.log(arr)<span class="hljs-comment">//[1,3,4]</span>
+<span class="hljs-built_in">console</span>.log(newarr)<span class="hljs-comment">//undefined</span>
+</code></pre>
+<h1 id="for-in">for in</h1>
+<p>&#x7279;&#x6027;&#xFF1A;</p>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x904D;&#x5386;&#x6570;&#x7EC4;&#x7684;&#x952E;&#x540D;&#xFF0C;&#x904D;&#x5386;&#x5BF9;&#x8C61;&#x7B80;&#x6D01;</li>
+</ol>
+<p>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> person = {name: <span class="hljs-string">&quot;&#x5C0F;&#x767D;&quot;</span>, age: <span class="hljs-number">28</span>, city: <span class="hljs-string">&quot;&#x5317;&#x4EAC;&quot;</span>}
+<span class="hljs-keyword">let</span> text = <span class="hljs-string">&quot;&quot;</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> person) {
+    text += person[i]
+}
+<span class="hljs-built_in">console</span>.log(text)
+<span class="hljs-comment">// &#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x4E3A;&#xFF1A;&#x5C0F;&#x767D;28&#x5317;&#x4EAC;</span>
+<span class="hljs-comment">//&#x5176;&#x6B21;&#x5728;&#x5C1D;&#x8BD5;&#x4E00;&#x4E9B;&#x6570;&#x7EC4;</span>
+<span class="hljs-keyword">let</span> arry = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> arry) {
+    <span class="hljs-built_in">console</span>.log(arry[i])
+}
+<span class="hljs-comment">//&#x80FD;&#x8F93;&#x51FA;&#x51FA;&#x6765;&#xFF0C;&#x8BC1;&#x660E;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x63A8;&#x8350;</span>
+</code></pre>
+<h1 id="for-of">for of</h1>
+<p>&#x7279;&#x6027;&#xFF1A;</p>
+<ol>
+<li>&#x53EF;&#x904D;&#x5386;map&#xFF0C;object,array,set string&#x7B49;,&#x4E0D;&#x80FD;&#x904D;&#x5386;&#x5BF9;&#x8C61;</li>
+<li>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;break,continue&#x548C;return&#xFF0C;&#x4E0D;&#x4EC5;&#x652F;&#x6301;&#x6570;&#x7EC4;&#x7684;&#x904D;&#x5386;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x904D;&#x5386;&#x7C7B;&#x4F3C;&#x6570;&#x7EC4;&#x7684;&#x5BF9;&#x8C61;</li>
+</ol>
+<p>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-string">&quot;1&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>, <span class="hljs-string">&quot;3&quot;</span>, <span class="hljs-string">&quot;4&quot;</span>];
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> item <span class="hljs-keyword">of</span> arr) {
+    <span class="hljs-built_in">console</span>.log(item)
+}<span class="hljs-comment">//&#x7ED3;&#x679C;&#x4E3A;1 2 3 4</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="常见知识点整理.html" class="navigation navigation-prev " aria-label="Previous page: 常见知识点整理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../frame/" class="navigation navigation-next " aria-label="Next page: 框架">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"js循环总结","level":"1.2.10","depth":2,"next":{"title":"框架","level":"1.3","depth":1,"path":"frame/README.md","ref":"frame/README.md","articles":[{"title":"vue组件传值方式整理","level":"1.3.1","depth":2,"path":"frame/vue组件传值方式整理.md","ref":"frame/vue组件传值方式整理.md","articles":[]}]},"previous":{"title":"常见知识点整理","level":"1.2.9","depth":2,"path":"js/常见知识点整理.md","ref":"js/常见知识点整理.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-treeview"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"js/js循环总结.md","mtime":"2021-07-14T05:30:19.666Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-07-14T05:53:47.438Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
