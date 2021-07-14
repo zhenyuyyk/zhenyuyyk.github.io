@@ -20,10 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/styles/images/duojincheng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/mvvm.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/发布-订阅模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/design/发布-订阅模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/适配器模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/design/适配器模式.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +51,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -61,15 +62,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
       <recent name="D:\myProject\zhenyuyyk.github.io\styles" />
       <recent name="D:\myProject\mybook" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -125,6 +127,16 @@
       <workItem from="1605600058303" duration="2215000" />
       <workItem from="1605664082299" duration="1655000" />
       <workItem from="1605665863487" duration="1427000" />
+      <workItem from="1624929710866" duration="1461000" />
+      <workItem from="1624943908051" duration="7838000" />
+      <workItem from="1625016663479" duration="2512000" />
+      <workItem from="1625033696635" duration="9349000" />
+      <workItem from="1625102829723" duration="2278000" />
+      <workItem from="1625116825697" duration="7323000" />
+      <workItem from="1625189643126" duration="2875000" />
+      <workItem from="1625203747916" duration="7661000" />
+      <workItem from="1625447330138" duration="2983000" />
+      <workItem from="1625461681571" duration="8945000" />
     </task>
     <servers />
   </component>
@@ -145,15 +157,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605605613461">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605605613461" />
-    <state x="467" y="144" width="602" height="536" key="find.popup" timestamp="1604393209980">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="467" y="144" width="602" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604393209980" />
   </component>
 </project>

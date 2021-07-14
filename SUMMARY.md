@@ -11,6 +11,7 @@
     * [函数式编程](js/函数式编程.md)
     * [网络安全](js/网络安全.md)
     * [常见知识点整理](js/常见知识点整理.md)
+    * [js循环总结](js/js循环总结.md)
 * [框架](frame/README.md)
     * [vue组件传值方式整理](frame/vue组件传值方式整理.md)
 * [设计模式](design/README.md)

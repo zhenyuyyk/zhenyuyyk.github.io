@@ -25,64 +25,68 @@
       <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-fontsettings/fontsettings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-fontsettings/website.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-highlight/ebook.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-highlight/website.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/lunr.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/search-lunr.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/search-lunr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/lunr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/lunr.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search-engine.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search-engine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-sharing/buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/gitbook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/gitbook/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/Promise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/Promise.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/Promise.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/函数式编程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/函数式编程.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/前端路由.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/前端路由.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/前端路由.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/常见知识点整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/常见知识点整理.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/闭包.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/network/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/styles/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/styles/website.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/发布-订阅模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/发布-订阅模式.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/FontAwesome.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-fontsettings/fontsettings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-fontsettings/website.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/ebook.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/website.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-livereload/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-livereload/plugin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/lunr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/search-lunr.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/search-lunr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/lunr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/lunr.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search-engine.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search-engine.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-sharing/buttons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/gitbook.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/gitbook/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/_book/gitbook/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/Promise.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/函数式编程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/函数式编程.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/前端路由.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/原型和原型链.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/常见知识点整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/常见知识点整理.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/闭包.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/network/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/发布-订阅模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/design/发布-订阅模式.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/网络安全.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/网络安全.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,9 +96,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="package.json" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -124,13 +128,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
       <recent name="D:\myProject\zhenyuyyk.github.io\styles" />
       <recent name="D:\myProject\mybook" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -189,7 +193,23 @@
       <workItem from="1624929710866" duration="1461000" />
       <workItem from="1624943908051" duration="7838000" />
       <workItem from="1625016663479" duration="2512000" />
-      <workItem from="1625033696635" duration="6649000" />
+      <workItem from="1625033696635" duration="9349000" />
+      <workItem from="1625102829723" duration="2278000" />
+      <workItem from="1625116825697" duration="7323000" />
+      <workItem from="1625189643126" duration="2875000" />
+      <workItem from="1625203747916" duration="7661000" />
+      <workItem from="1625447330138" duration="2983000" />
+      <workItem from="1625461681571" duration="9976000" />
+      <workItem from="1625534076350" duration="1932000" />
+      <workItem from="1625548569394" duration="768000" />
+      <workItem from="1625561379072" duration="5000" />
+      <workItem from="1625561540472" duration="54000" />
+      <workItem from="1625619441366" duration="591000" />
+      <workItem from="1625731169818" duration="1193000" />
+      <workItem from="1625794428575" duration="830000" />
+      <workItem from="1626052325723" duration="6033000" />
+      <workItem from="1626141901814" duration="2644000" />
+      <workItem from="1626227237767" duration="5468000" />
     </task>
     <servers />
   </component>
@@ -210,15 +230,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605605613461">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605605613461" />
-    <state x="467" y="144" width="602" height="536" key="find.popup" timestamp="1604393209980">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="467" y="144" width="602" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1604393209980" />
   </component>
 </project>

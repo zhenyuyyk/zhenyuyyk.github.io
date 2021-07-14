@@ -229,6 +229,19 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.10" data-path="../js/js循环总结.html">
+            
+                <a href="../js/js循环总结.html">
+            
+                    
+                    js循环总结
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -452,7 +465,7 @@
 <li><div><a href="#&#x73B0;&#x5B9E;&#x4E2D;&#x7684;&#x53D1;&#x5E03;&#xFF0D;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;">&#x73B0;&#x5B9E;&#x4E2D;&#x7684;&#x53D1;&#x5E03;&#xFF0D;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;</a><i></i></div></li>
 <li><div><a href="#&#x4EE3;&#x7801;&#x5B9E;&#x73B0;">&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</a><i></i></div></li>
 <li><div><a href="#&#x7EE7;&#x7EED;&#x4F18;&#x5316;">&#x7EE7;&#x7EED;&#x4F18;&#x5316;</a><i></i></div></li>
-<li><div><a href="#&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;">&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;</a><i></i></div></li>
+<li><div><a href="#&#x5148;&#x53D1;&#x5E03;&#x540E;&#x8BA2;&#x9605;&#x548C;&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;">&#x5148;&#x53D1;&#x5E03;&#x540E;&#x8BA2;&#x9605;&#x548C;&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;</a><i></i></div></li>
 <li><div><a href="#&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
 <ul>
 <li><div><a href="#&#x5B9E;&#x4F8B;&#x4E00;&#xFF1A;&#x7F51;&#x7AD9;&#x767B;&#x5F55;">&#x5B9E;&#x4F8B;&#x4E00;&#xFF1A;&#x7F51;&#x7AD9;&#x767B;&#x5F55;</a><i></i></div></li>
@@ -481,7 +494,8 @@ salesOffices.listen = <span class="hljs-function"><span class="hljs-keyword">fun
 }; 
 salesOffices.trigger = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{ <span class="hljs-comment">// &#x53D1;&#x5E03;&#x6D88;&#x606F;</span>
  <span class="hljs-keyword">for</span>( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, fn; fn = <span class="hljs-keyword">this</span>.clientList[ i++ ]; ){ 
- fn.apply( <span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span> ); <span class="hljs-comment">// (2) // arguments &#x662F;&#x53D1;&#x5E03;&#x6D88;&#x606F;&#x65F6;&#x5E26;&#x4E0A;&#x7684;&#x53C2;&#x6570;</span>
+     fn.apply( <span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span> ); <span class="hljs-comment">// (2) // arguments &#x662F;&#x53D1;&#x5E03;&#x6D88;&#x606F;&#x65F6;&#x5E26;&#x4E0A;&#x7684;&#x53C2;&#x6570;</span>
+     <span class="hljs-comment">// fn( ...arguments )</span>
  }
 };
 </code></pre>
@@ -567,8 +581,16 @@ salesOffices.trigger(<span class="hljs-string">&apos;squareMeter88&apos;</span>,
 </code></pre>
 <blockquote>
 <p>Array.prototype.shift.call()&#x4F5C;&#x7528;&#x662F;&#x65B9;&#x6CD5;&#x4ECE;&#x6570;&#x7EC4;&#x4E2D;&#x5220;&#x9664;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x8BE5;&#x5143;&#x7D20;&#x7684;&#x503C;</p>
-<h2 id="&#x7EE7;&#x7EED;&#x4F18;&#x5316;">&#x7EE7;&#x7EED;&#x4F18;&#x5316;</h2>
+<p>remove&#x65B9;&#x6CD5;&#x91CC;&#x7684;for&#x5FAA;&#x73AF;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x53CD;&#x5411;&#x904D;&#x5386;&#xFF0C;&#x6B63;&#x5411;&#x4E5F;&#x662F;&#x53EF;&#x4EE5;&#x7684;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> l = <span class="hljs-number">0</span>; l &lt; fns.length; l++) { <span class="hljs-comment">// &#x53CD;&#x5411;&#x904D;&#x5386;&#x8BA2;&#x9605;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5217;&#x8868;</span>
+    <span class="hljs-keyword">var</span> _fn = fns[l];
+    <span class="hljs-keyword">if</span> (_fn === fn) {
+        fns.splice(l, <span class="hljs-number">1</span>); <span class="hljs-comment">// &#x5220;&#x9664;&#x8BA2;&#x9605;&#x8005;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;</span>
+    }
+}
+</code></pre>
 </blockquote>
+<h2 id="&#x7EE7;&#x7EED;&#x4F18;&#x5316;">&#x7EE7;&#x7EED;&#x4F18;&#x5316;</h2>
 <p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x770B;&#x5230;&#x4E86;&#x5982;&#x4F55;&#x8BA9;&#x552E;&#x697C;&#x5904;&#x62E5;&#x6709;&#x63A5;&#x53D7;&#x8BA2;&#x9605;&#x548C;&#x53D1;&#x5E03;&#x4E8B;&#x4EF6;&#x7684;&#x529F;&#x80FD;&#x3002;&#x5047;&#x8BBE;&#x73B0;&#x5728;&#x5C0F;&#x660E;&#x53C8;&#x53BB;&#x53E6;&#x4E00;&#x4E2A;&#x552E;&#x697C;&#x5904;&#x4E70;&#x623F;&#x5B50;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x662F;&#x5426;&#x5FC5;&#x987B;&#x5728;&#x53E6;&#x4E00;&#x4E2A;&#x552E;&#x697C;&#x5904;&#x5BF9;&#x8C61;&#x4E0A;&#x91CD;&#x5199;&#x4E00;&#x6B21;&#x5462;&#xFF0C;&#x6709;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x53EF;&#x4EE5;&#x8BA9; &#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x62E5;&#x6709;&#x53D1;&#x5E03;&#x2014;&#x8BA2;&#x9605;&#x529F;&#x80FD;&#x5462;&#xFF1F; &#x7B54;&#x6848;&#x663E;&#x7136;&#x662F;&#x6709;&#x7684;&#xFF0C;JavaScript
 &#x4F5C;&#x4E3A;&#x4E00;&#x95E8;&#x89E3;&#x91CA;&#x6267;&#x884C;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x7ED9;&#x5BF9;&#x8C61;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x804C;&#x8D23;&#x662F;&#x7406;&#x6240;&#x5F53;&#x7136;&#x7684; &#x4E8B;&#x60C5;&#x3002; &#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x628A;&#x53D1;&#x5E03;&#x2014;&#x8BA2;&#x9605;&#x7684;&#x529F;&#x80FD;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x5BF9;&#x8C61;&#x5185;&#xFF1A;</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> event = {
@@ -689,7 +711,18 @@ Event.listen(<span class="hljs-string">&apos;squareMeter88&apos;</span>, <span c
 });
 Event.trigger(<span class="hljs-string">&apos;squareMeter88&apos;</span>, <span class="hljs-number">2000000</span>); <span class="hljs-comment">// &#x552E;&#x697C;&#x5904;&#x53D1;&#x5E03;&#x6D88;&#x606F;</span>
 </code></pre>
-<h2 id="&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;">&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;</h2>
+<h2 id="&#x5148;&#x53D1;&#x5E03;&#x540E;&#x8BA2;&#x9605;&#x548C;&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;">&#x5148;&#x53D1;&#x5E03;&#x540E;&#x8BA2;&#x9605;&#x548C;&#x5168;&#x5C40;&#x4E8B;&#x4EF6;&#x7684;&#x547D;&#x540D;&#x51B2;&#x7A81;</h2>
+<p>&#x6211;&#x4EEC;&#x6240;&#x4E86;&#x89E3;&#x5230;&#x7684;&#x53D1;&#x5E03;&#x2014;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#xFF0C;&#x90FD;&#x662F;&#x8BA2;&#x9605;&#x8005;&#x5FC5;&#x987B;&#x5148;&#x8BA2;&#x9605;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#xFF0C;&#x968F;&#x540E;&#x624D;&#x80FD;&#x63A5;&#x6536;&#x5230;&#x53D1;&#x5E03;&#x8005;
+&#x53D1;&#x5E03;&#x7684;&#x6D88;&#x606F;&#x3002;&#x5982;&#x679C;&#x628A;&#x987A;&#x5E8F;&#x53CD;&#x8FC7;&#x6765;&#xFF0C;&#x53D1;&#x5E03;&#x8005;&#x5148;&#x53D1;&#x5E03;&#x4E00;&#x6761;&#x6D88;&#x606F;&#xFF0C;&#x800C;&#x5728;&#x6B64;&#x4E4B;&#x524D;&#x5E76;&#x6CA1;&#x6709;&#x5BF9;&#x8C61;&#x6765;&#x8BA2;&#x9605;&#x5B83;&#xFF0C;&#x8FD9;
+&#x6761;&#x6D88;&#x606F;&#x65E0;&#x7591;&#x5C06;&#x6D88;&#x5931;&#x5728;&#x5B87;&#x5B99;&#x4E2D;&#x3002;</p>
+<p>&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x5C06;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x4FDD;&#x5B58;&#x4E0B;&#x6765;&#xFF0C;&#x7B49;&#x5230;&#x6709;&#x5BF9;&#x8C61;&#x6765;&#x8BA2;&#x9605;&#x5B83;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x518D;&#x91CD;&#x65B0;&#x628A;&#x6D88;
+&#x606F;&#x53D1;&#x5E03;&#x7ED9;&#x8BA2;&#x9605;&#x8005;&#x3002;&#x5C31;&#x5982;&#x540C; QQ &#x4E2D;&#x7684;&#x79BB;&#x7EBF;&#x6D88;&#x606F;&#x4E00;&#x6837;&#xFF0C;&#x79BB;&#x7EBF;&#x6D88;&#x606F;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#xFF0C;&#x63A5;&#x6536;&#x4EBA;&#x4E0B;&#x6B21;&#x767B;&#x5F55;
+&#x4E0A;&#x7EBF;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x91CD;&#x65B0;&#x6536;&#x5230;&#x8FD9;&#x6761;&#x6D88;&#x606F;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x6EE1;&#x8DB3;&#x8FD9;&#x4E2A;&#x9700;&#x6C42;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5B58;&#x653E;&#x79BB;&#x7EBF;&#x4E8B;&#x4EF6;&#x7684;&#x5806;&#x6808;&#xFF0C;&#x5F53;&#x4E8B;&#x4EF6;&#x53D1;&#x5E03;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x6B64;&#x65F6;&#x8FD8;
+&#x6CA1;&#x6709;&#x8BA2;&#x9605;&#x8005;&#x6765;&#x8BA2;&#x9605;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x6682;&#x65F6;&#x628A;&#x53D1;&#x5E03;&#x4E8B;&#x4EF6;&#x7684;&#x52A8;&#x4F5C;&#x5305;&#x88F9;&#x5728;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#xFF0C;&#x8FD9;&#x4E9B;&#x5305;&#x88C5;&#x51FD;&#x6570;&#x5C06;&#x88AB;
+&#x5B58;&#x5165;&#x5806;&#x6808;&#x4E2D;&#xFF0C;&#x7B49;&#x5230;&#x7EC8;&#x4E8E;&#x6709;&#x5BF9;&#x8C61;&#x6765;&#x8BA2;&#x9605;&#x6B64;&#x4E8B;&#x4EF6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x904D;&#x5386;&#x5806;&#x6808;&#x5E76;&#x4E14;&#x4F9D;&#x6B21;&#x6267;&#x884C;&#x8FD9;&#x4E9B;&#x5305;&#x88C5;&#x51FD;&#x6570;&#xFF0C;
+&#x4E5F;&#x5C31;&#x662F;&#x91CD;&#x65B0;&#x53D1;&#x5E03;&#x91CC;&#x9762;&#x7684;&#x4E8B;&#x4EF6;&#x3002;&#x5F53;&#x7136;&#x79BB;&#x7EBF;&#x4E8B;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x53EA;&#x6709;&#x4E00;&#x6B21;&#xFF0C;&#x5C31;&#x50CF; QQ &#x7684;&#x672A;&#x8BFB;&#x6D88;&#x606F;&#x53EA;&#x4F1A;&#x88AB;&#x91CD;
+&#x65B0;&#x9605;&#x8BFB;&#x4E00;&#x6B21;&#xFF0C;&#x6240;&#x4EE5;&#x521A;&#x624D;&#x7684;&#x64CD;&#x4F5C;&#x6211;&#x4EEC;&#x53EA;&#x80FD;&#x8FDB;&#x884C;&#x4E00;&#x6B21;&#x3002;</p>
 <p>&#x5168;&#x5C40;&#x7684;&#x53D1;&#x5E03;&#x2014;&#x8BA2;&#x9605;&#x5BF9;&#x8C61;&#x91CC;&#x53EA;&#x6709;&#x4E00;&#x4E2A; clinetList &#x6765;&#x5B58;&#x653E;&#x6D88;&#x606F;&#x540D;&#x548C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5927;&#x5BB6;&#x90FD;&#x901A;&#x8FC7;&#x5B83;&#x6765;&#x8BA2;
 &#x9605;&#x548C;&#x53D1;&#x5E03;&#x5404;&#x79CD;&#x6D88;&#x606F;&#xFF0C;&#x4E45;&#x800C;&#x4E45;&#x4E4B;&#xFF0C;&#x96BE;&#x514D;&#x4F1A;&#x51FA;&#x73B0;&#x4E8B;&#x4EF6;&#x540D;&#x51B2;&#x7A81;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x7ED9; Event &#x5BF9;&#x8C61;&#x63D0;
 &#x4F9B;&#x521B;&#x5EFA;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x7684;&#x529F;&#x80FD;&#x3002;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
@@ -809,6 +842,21 @@ Event.trigger(<span class="hljs-string">&apos;squareMeter88&apos;</span>, <span 
     } ();
     <span class="hljs-keyword">return</span> Event;
 })();
+
+<span class="hljs-comment">/************** &#x5148;&#x53D1;&#x5E03;&#x540E;&#x8BA2;&#x9605; ********************/</span>
+Event.trigger( <span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-number">1</span> );
+Event.listen( <span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> a </span>)</span>{
+    <span class="hljs-built_in">console</span>.log( a ); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;1 </span>
+});
+<span class="hljs-comment">/************** &#x4F7F;&#x7528;&#x547D;&#x540D;&#x7A7A;&#x95F4; ********************/</span>
+Event.create( <span class="hljs-string">&apos;namespace1&apos;</span> ).listen( <span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> a </span>)</span>{
+    <span class="hljs-built_in">console</span>.log( a ); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;1 </span>
+});
+Event.create( <span class="hljs-string">&apos;namespace1&apos;</span> ).trigger( <span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-number">1</span> );
+Event.create( <span class="hljs-string">&apos;namespace2&apos;</span> ).listen( <span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"> a </span>)</span>{
+    <span class="hljs-built_in">console</span>.log( a ); <span class="hljs-comment">// &#x8F93;&#x51FA;&#xFF1A;2 </span>
+});
+Event.create( <span class="hljs-string">&apos;namespace2&apos;</span> ).trigger( <span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-number">2</span> );
 </code></pre>
 <h2 id="&#x5B9E;&#x4F8B;">&#x5B9E;&#x4F8B;</h2>
 <h3 id="&#x5B9E;&#x4F8B;&#x4E00;&#xFF1A;&#x7F51;&#x7AD9;&#x767B;&#x5F55;">&#x5B9E;&#x4F8B;&#x4E00;&#xFF1A;&#x7F51;&#x7AD9;&#x767B;&#x5F55;</h3>
@@ -1106,9 +1154,9 @@ addSub&#x6DFB;&#x52A0;&#x8BA2;&#x9605;&#x65B9;&#x6CD5;&#xFF0C;removeSub&#x53D6;&
 <blockquote>
 <p>&#x521B;&#x5EFA;&#x8BA2;&#x9605;&#x8005;&#x672C;&#x8EAB;&#x8981;&#x6D88;&#x8017;&#x4E00;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x548C;&#x5185;&#x5B58;&#xFF0C;&#x800C; &#x4E14;&#x5F53;&#x4F60;&#x8BA2;&#x9605;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x540E;&#xFF0C;&#x4E5F;&#x8BB8;&#x6B64;&#x6D88;&#x606F;&#x6700;&#x540E;&#x90FD;&#x672A;&#x53D1;&#x751F;&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x8BA2;&#x9605;&#x8005;&#x4F1A;&#x59CB;&#x7EC8;&#x5B58;&#x5728;&#x4E8E;&#x5185;&#x5B58;&#x4E2D;&#x3002;
  &#x53E6;&#x5916;&#xFF0C; &#x53D1;&#x5E03;&#x2014;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x5F31;&#x5316;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x7CFB;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x8FC7;&#x5EA6;&#x4F7F;&#x7528;&#x7684;&#x8BDD;&#xFF0C;&#x5BF9;&#x8C61;&#x548C;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x5FC5;&#x8981;&#x8054; &#x7CFB;&#x4E5F;&#x5C06;&#x88AB;&#x6DF1;&#x57CB;&#x5728;&#x80CC;&#x540E;&#xFF0C;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F;&#x96BE;&#x4EE5;&#x8DDF;&#x8E2A;&#x7EF4;&#x62A4;&#x548C;&#x7406;&#x89E3;&#x3002;&#x7279;&#x522B;&#x662F;&#x6709;&#x591A;&#x4E2A;&#x53D1;&#x5E03;&#x8005;&#x548C;&#x8BA2;&#x9605;&#x8005;&#x5D4C;&#x5957;&#x5230;&#x4E00; &#x8D77;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8981;&#x8DDF;&#x8E2A;&#x4E00;&#x4E2A; bug &#x4E0D;&#x662F;&#x4EF6;&#x8F7B;&#x677E;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+</blockquote>
 <h2 id="&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x548C;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;">&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x548C;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;</h2>
 <p>&#x4E0A;&#x6587;&#x8BB2;&#x89E3;&#x4E86;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#xFF0C;&#x6709;&#x5F88;&#x591A;&#x540C;&#x5B66;&#x8BA4;&#x4E3A;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x6A21;&#x5F0F;&#x7B49;&#x540C;&#x4E8E;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#xFF0C;&#x867D;&#x7136;&#x4ED6;&#x4EEC;&#x672C;&#x8D28;&#x4E0A;&#x90FD;&#x6709;&#x53D1;&#x5E03;&#x8BA2;&#x9605;&#x7684;&#x601D;&#x60F3;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x533A;&#x522B;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x4E0D;&#x80FD;&#x5C06;&#x4E8C;&#x8005;&#x5B8C;&#x5168;&#x7B49;&#x540C;&#x8D77;&#x6765;&#x3002;</p>
-</blockquote>
 <p>&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#x4E00;&#x822C;&#x6709;&#x89C2;&#x5BDF;&#x8005;&#x548C;&#x88AB;&#x89C2;&#x5BDF;&#x8005;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;&#x5927;&#x5BB6;&#x5728;&#x5B66;&#x6821;&#x4E0A;&#x81EA;&#x4E60;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7B49;&#x8001;&#x5E08;&#x8D70;&#x4E86;&#x6709;&#x4E9B;&#x4EBA;&#x4F1A;&#x73A9;&#x624B;&#x673A;&#x3001;&#x5403;&#x96F6;&#x98DF;&#x3001;&#x4EA4;&#x5934;&#x63A5;&#x8033;&#xFF0C;&#x4F46;&#x662F;&#x88AB;&#x8001;&#x5E08;&#x53D1;&#x73B0;&#x53EF;&#x5C31;&#x4E0D;&#x597D;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x5927;&#x5BB6;&#x60F3;&#x4E86;&#x4E00;&#x4E2A;&#x62DB;&#xFF0C;&#x8BA9;&#x5750;&#x5728;&#x6700;&#x540E;&#x6392;&#x7684;&#x540C;&#x5B66;&#x5E2E;&#x5FD9;&#x201C;&#x653E;&#x98CE;&#x201D;&#xFF0C;&#x8001;&#x5E08;&#x4E00;&#x6765;&#x5C31;&#x7ED9;&#x5927;&#x5BB6;&#x4E00;&#x4E2A;&#x624B;&#x52BF;&#x901A;&#x77E5;&#x5927;&#x5BB6;&#xFF0C;&#x5927;&#x5BB6;&#x5C31;&#x7EE7;&#x7EED;&#x88C5;&#x597D;&#x597D;&#x5B66;&#x751F;&#x3002;</p>
 <p><img src="../styles/images/dep1.png" alt="Image text"></p>
 <p>&#x8FD9;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#xFF0C;&#x201C;&#x653E;&#x98CE;&#x201D;&#x7684;&#x540C;&#x5B66;&#x662F;&#x88AB;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;&#x73A9;&#x624B;&#x673A;&#x3001;&#x5403;&#x96F6;&#x98DF;&#x7684;&#x540C;&#x5B66;&#x662F;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;&#x5927;&#x5BB6;&#x90FD;&#x5728;&#x89C2;&#x5BDF;&#x201C;&#x653E;&#x98CE;&#x201D;&#x540C;&#x5B66;&#x7684;&#x624B;&#x52BF;&#xFF0C;&#x4E00;&#x65E6;&#x8001;&#x5E08;&#x6765;&#x4E86;&#xFF0C;&#x88AB;&#x89C2;&#x5BDF;&#x8005;&#x5C31;&#x4F1A;&#x901A;&#x77E5;&#x5927;&#x5BB6;&#x3002;</p>
@@ -1165,7 +1213,7 @@ addSub&#x6DFB;&#x52A0;&#x8BA2;&#x9605;&#x65B9;&#x6CD5;&#xFF0C;removeSub&#x53D6;&
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"发布-订阅模式","level":"1.4.1","depth":2,"next":{"title":"适配器模式","level":"1.4.2","depth":2,"path":"design/适配器模式.md","ref":"design/适配器模式.md","articles":[]},"previous":{"title":"设计模式","level":"1.4","depth":1,"path":"design/README.md","ref":"design/README.md","articles":[{"title":"发布-订阅模式","level":"1.4.1","depth":2,"path":"design/发布-订阅模式.md","ref":"design/发布-订阅模式.md","articles":[]},{"title":"适配器模式","level":"1.4.2","depth":2,"path":"design/适配器模式.md","ref":"design/适配器模式.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page-treeview"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"design/发布-订阅模式.md","mtime":"2021-07-05T08:04:46.701Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-07-05T09:27:27.434Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"发布-订阅模式","level":"1.4.1","depth":2,"next":{"title":"适配器模式","level":"1.4.2","depth":2,"path":"design/适配器模式.md","ref":"design/适配器模式.md","articles":[]},"previous":{"title":"设计模式","level":"1.4","depth":1,"path":"design/README.md","ref":"design/README.md","articles":[{"title":"发布-订阅模式","level":"1.4.1","depth":2,"path":"design/发布-订阅模式.md","ref":"design/发布-订阅模式.md","articles":[]},{"title":"适配器模式","level":"1.4.2","depth":2,"path":"design/适配器模式.md","ref":"design/适配器模式.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["page-treeview"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"design/发布-订阅模式.md","mtime":"2021-07-12T03:31:16.663Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-07-14T05:48:20.510Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
