@@ -23,4 +23,8 @@
 * [网络协议](network/README.md)
     * [传输层协议TCP和UDP](network/传输层协议TCP和UDP.md)
     * [TCP三次握手和四次挥手](network/TCP三次握手和四次挥手.md)
+* [数据结构](structure/README.md)
+    * [堆栈和队列](structure/堆栈和队列.md)
+* [算法](algorithm/README.md)
+    * [排序](algorithm/排序.md)
 
