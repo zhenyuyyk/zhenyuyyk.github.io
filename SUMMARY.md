@@ -25,6 +25,7 @@
     * [TCP三次握手和四次挥手](network/TCP三次握手和四次挥手.md)
 * [数据结构](structure/README.md)
     * [堆栈和队列](structure/堆栈和队列.md)
+    * [二叉树](structure/二叉树.md)
 * [算法](algorithm/README.md)
     * [排序](algorithm/排序.md)
 

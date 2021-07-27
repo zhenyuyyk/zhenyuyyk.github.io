@@ -1,0 +1,632 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>算法 · 阵雨的随笔记录</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        <meta name="author" content="zhenyu">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="排序.html" />
+    
+    
+    <link rel="prev" href="../structure/堆栈和队列.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../js/">
+            
+                <a href="../js/">
+            
+                    
+                    js知识
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../js/闭包.html">
+            
+                <a href="../js/闭包.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../js/原型和原型链.html">
+            
+                <a href="../js/原型和原型链.html">
+            
+                    
+                    原型和原型链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../js/Promise.html">
+            
+                <a href="../js/Promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../js/前端路由.html">
+            
+                <a href="../js/前端路由.html">
+            
+                    
+                    前端路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../js/垃圾回收机制.html">
+            
+                <a href="../js/垃圾回收机制.html">
+            
+                    
+                    垃圾回收机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../js/浅拷贝和深拷贝.html">
+            
+                <a href="../js/浅拷贝和深拷贝.html">
+            
+                    
+                    浅拷贝和深拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../js/函数式编程.html">
+            
+                <a href="../js/函数式编程.html">
+            
+                    
+                    函数式编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../js/网络安全.html">
+            
+                <a href="../js/网络安全.html">
+            
+                    
+                    网络安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../js/常见知识点整理.html">
+            
+                <a href="../js/常见知识点整理.html">
+            
+                    
+                    常见知识点整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../js/js循环总结.html">
+            
+                <a href="../js/js循环总结.html">
+            
+                    
+                    js循环总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../frame/">
+            
+                <a href="../frame/">
+            
+                    
+                    框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../frame/vue组件传值方式整理.html">
+            
+                <a href="../frame/vue组件传值方式整理.html">
+            
+                    
+                    vue组件传值方式整理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../design/">
+            
+                <a href="../design/">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../design/发布-订阅模式.html">
+            
+                <a href="../design/发布-订阅模式.html">
+            
+                    
+                    发布-订阅模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../design/适配器模式.html">
+            
+                <a href="../design/适配器模式.html">
+            
+                    
+                    适配器模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../browser/">
+            
+                <a href="../browser/">
+            
+                    
+                    浏览器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../browser/浏览器缓存.html">
+            
+                <a href="../browser/浏览器缓存.html">
+            
+                    
+                    浏览器缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../browser/浏览器的多进程和js的单线程.html">
+            
+                <a href="../browser/浏览器的多进程和js的单线程.html">
+            
+                    
+                    浏览器的多进程和js的单线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../network/">
+            
+                <a href="../network/">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../network/传输层协议TCP和UDP.html">
+            
+                <a href="../network/传输层协议TCP和UDP.html">
+            
+                    
+                    传输层协议TCP和UDP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../network/TCP三次握手和四次挥手.html">
+            
+                <a href="../network/TCP三次握手和四次挥手.html">
+            
+                    
+                    TCP三次握手和四次挥手
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../structure/">
+            
+                <a href="../structure/">
+            
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../structure/堆栈和队列.html">
+            
+                <a href="../structure/堆栈和队列.html">
+            
+                    
+                    堆栈和队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="排序.html">
+            
+                <a href="排序.html">
+            
+                    
+                    排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >算法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9; aleen42 all right reserved, powered by <a href="https://github.com/aleen42" target="_blank" _target="blank">aleen42</a></span></div><ul>
+<li><div><a href="#&#x7B97;&#x6CD5;">&#x7B97;&#x6CD5;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;">&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</a><i></i></div></li>
+<li><div><a href="#&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;">&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="&#x7B97;&#x6CD5;">&#x7B97;&#x6CD5;</h1>
+<p>&#x5728;&#x5F00;&#x59CB;&#x5B66;&#x4E60;&#x4E4B;&#x524D;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x8981;&#x641E;&#x61C2;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x548C;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;&#x9AD8;&#x4F4E;&#x5171;&#x540C;&#x51B3;&#x5B9A;&#x7740;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x8D28;&#x91CF;&#x7684;&#x597D;&#x574F;&#xFF1A;</p>
+<h2 id="&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;">&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</h2>
+<p>&#x4E00;&#x4E2A;&#x7B97;&#x6CD5;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x53CD;&#x6620;&#x4E86;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x4ECE;&#x5F00;&#x59CB;&#x5230;&#x7ED3;&#x675F;&#x6240;&#x9700;&#x8981;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x628A;&#x7B97;&#x6CD5;&#x4E2D;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x91CD;&#x590D;&#x6267;&#x884C;&#x7684;&#x6B21;&#x6570;&#xFF08;&#x9891;&#x5EA6;&#xFF09;&#x4F5C;&#x4E3A;&#x7B97;&#x6CD5;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x3002;</p>
+<p>&#x6CA1;&#x6709;&#x5FAA;&#x73AF;&#x8BED;&#x53E5;&#xFF0C;&#x8BB0;&#x4F5C;O(1)&#xFF0C;&#x4E5F;&#x79F0;&#x4E3A;&#x5E38;&#x6570;&#x9636;&#x3002;&#x53EA;&#x6709;&#x4E00;&#x91CD;&#x5FAA;&#x73AF;&#xFF0C;&#x5219;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x7684;&#x6267;&#x884C;&#x9891;&#x5EA6;&#x4E0E;&#x95EE;&#x9898;&#x89C4;&#x6A21;n&#x5448;&#x7EBF;&#x6027;&#x589E;&#x5927;&#x5173;&#x7CFB;&#xFF0C;&#x8BB0;&#x4F5C;O&#xFF08;n&#xFF09;&#xFF0C;&#x4E5F;&#x53EB;&#x7EBF;&#x6027;&#x9636;&#x3002;</p>
+<p>&#x5E38;&#x89C1;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x6709;&#xFF1A;</p>
+<ul>
+<li>O(1): Constant Complexity: Constant &#x5E38;&#x6570;&#x590D;&#x6742;&#x5EA6;</li>
+<li>O(log n): Logarithmic Complexity: &#x5BF9;&#x6570;&#x590D;&#x6742;&#x5EA6;</li>
+<li>O(n): Linear Complexity: &#x7EBF;&#x6027;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</li>
+<li>O(n^2): N square Complexity &#x5E73;&#x2F45;&#x65B9;</li>
+<li>O(n^3): N square Complexity &#x2F74;&#x7ACB;&#x2F45;&#x65B9;</li>
+<li>O(2^n): Exponential Growth &#x6307;&#x6570;</li>
+<li>O(n!): Factorial &#x9636;&#x4E58;</li>
+</ul>
+<h2 id="&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;">&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;</h2>
+<p>&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x7684;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F;&#x6307;&#x8FD0;&#x884C;&#x5B8C;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x6240;&#x9700;&#x5185;&#x5B58;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x5229;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x7A7A;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x7A0B;&#x5E8F;&#x7684;&#x8FD0;&#x884C;&#x6240;&#x9700;&#x8981;&#x7684;&#x5185;&#x5B58;&#x591A;&#x5C11;&#x6709;&#x4E2A;&#x9884;&#x5148;&#x4F30;&#x8BA1;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x6267;&#x884C;&#x65F6;&#x9664;&#x4E86;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x548C;&#x5B58;&#x50A8;&#x672C;&#x8EAB;&#x6240;&#x4F7F;&#x7528;&#x7684;&#x6307;&#x4EE4;&#x3001;&#x5E38;&#x6570;&#x3001;&#x53D8;&#x91CF;&#x548C;&#x8F93;&#x5165;&#x6570;&#x636E;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x4E00;&#x4E9B;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#x5DE5;&#x4F5C;&#x5355;&#x5143;&#x548C;&#x5B58;&#x50A8;&#x4E00;&#x4E9B;&#x4E3A;&#x73B0;&#x5B9E;&#x8BA1;&#x7B97;&#x6240;&#x9700;&#x4FE1;&#x606F;&#x7684;&#x8F85;&#x52A9;&#x7A7A;&#x95F4;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../structure/堆栈和队列.html" class="navigation navigation-prev " aria-label="Previous page: 堆栈和队列">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="排序.html" class="navigation navigation-next " aria-label="Next page: 排序">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"算法","level":"1.8","depth":1,"next":{"title":"排序","level":"1.8.1","depth":2,"path":"algorithm/排序.md","ref":"algorithm/排序.md","articles":[]},"previous":{"title":"堆栈和队列","level":"1.7.1","depth":2,"path":"structure/堆栈和队列.md","ref":"structure/堆栈和队列.md","articles":[]},"dir":"ltr"},"config":{"plugins":["page-treeview"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"page-treeview":{"collapsed":false,"copyright":"Copyright © aleen42","minHeaderCount":"1","minHeaderDeep":"1"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"zhenyu","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"阵雨的随笔记录","gitbook":"*","description":"阵雨的随笔记录"},"file":{"path":"algorithm/README.md","mtime":"2021-07-23T08:20:38.712Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2021-07-26T09:11:28.639Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -20,47 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="js循环总结-2021.7.14">
-      <change afterPath="$PROJECT_DIR$/styles/images/duiliepaidui.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/lianbiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/lianzhancharu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/lianzhanshanchu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/zhan.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/zhan1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/zhandui.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/zhanshengming.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/zhanzhixing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/二叉树.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/erchashu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/erchasousuoshu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/houxu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/juliecs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/qianxu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/scerchashu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/shu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/yichuliangge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/yichuyige.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/yichuzuoce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/zhongxu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/design/适配器模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/适配器模式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/design/适配器模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/适配器模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/Promise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/js循环总结.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/js循环总结.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/js循环总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/js循环总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/函数式编程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/函数式编程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/前端路由.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/原型和原型链.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/常见知识点整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/常见知识点整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/网络安全.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/网络安全.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/network/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/适配器模式.md" beforeDir="false" afterPath="$PROJECT_DIR$/design/适配器模式.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/js循环总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/js循环总结.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../one" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -192,7 +165,10 @@
       <workItem from="1626674103032" duration="661000" />
       <workItem from="1627028049077" duration="3332000" />
       <workItem from="1627262348736" duration="1024000" />
-      <workItem from="1627277614186" duration="6877000" />
+      <workItem from="1627277614186" duration="7005000" />
+      <workItem from="1627348310957" duration="1197000" />
+      <workItem from="1627356567488" duration="595000" />
+      <workItem from="1627363321336" duration="5702000" />
     </task>
     <task id="LOCAL-00001" summary="js循环总结-2021.7.14">
       <created>1626241842664</created>
