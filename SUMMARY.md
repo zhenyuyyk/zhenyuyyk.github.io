@@ -27,6 +27,7 @@
     * [堆栈和队列](structure/堆栈和队列.md)
     * [二叉树](structure/二叉树.md)
     * [哈希表HashMap](structure/哈希表HashMap.md)
+    * [链表](structure/链表.md)
 * [算法](algorithm/README.md)
     * [排序](algorithm/排序.md)
 

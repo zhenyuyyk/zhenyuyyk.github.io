@@ -20,16 +20,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="js循环总结-2021.7.14">
-      <change afterPath="$PROJECT_DIR$/structure/哈希表HashMap.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/haxibiaolei.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/haxiput.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/haxiresize.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/huonasuanfa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/kaifangdizhi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/lalianfa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/xianxingtance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/structure/链表.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/danxianglianbiao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/lianbiao2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/lianbiaocharu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/lianbiaoshanchu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/shuangxianglianbiao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/images/xunhuanlianbiao.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/algorithm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/algorithm/排序.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/algorithm/排序.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/algorithm/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/排序.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/algorithm/排序.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/design/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/发布-订阅模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/design/发布-订阅模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/适配器模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/design/适配器模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/Promise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/js循环总结.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/js循环总结.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/函数式编程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/函数式编程.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/前端路由.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/常见知识点整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/常见知识点整理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/网络安全.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/网络安全.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/闭包.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/structure/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/二叉树.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/structure/二叉树.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/堆栈和队列.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/structure/堆栈和队列.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/适配器模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/适配器模式.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/Promise.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/js循环总结.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/js循环总结.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/函数式编程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/函数式编程.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/前端路由.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/原型和原型链.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/常见知识点整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/常见知识点整理.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/网络安全.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/网络安全.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/闭包.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/二叉树.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/二叉树.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/哈希表HashMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/哈希表HashMap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/堆栈和队列.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/堆栈和队列.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/haxiresize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/images/haxiresize.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +229,17 @@
       <workItem from="1627363321336" duration="5702000" />
       <workItem from="1627435148536" duration="19000" />
       <workItem from="1627883900131" duration="10664000" />
-      <workItem from="1627953877203" duration="2113000" />
+      <workItem from="1627953877203" duration="6666000" />
+      <workItem from="1628039645600" duration="773000" />
+      <workItem from="1628045996064" duration="39000" />
+      <workItem from="1628058587873" duration="4270000" />
+      <workItem from="1628142531232" duration="1197000" />
+      <workItem from="1628211449371" duration="1214000" />
+      <workItem from="1628241601531" duration="82000" />
+      <workItem from="1628471780787" duration="593000" />
+      <workItem from="1628671834513" duration="638000" />
+      <workItem from="1628731941202" duration="691000" />
+      <workItem from="1628833069323" duration="1886000" />
     </task>
     <task id="LOCAL-00001" summary="js循环总结-2021.7.14">
       <created>1626241842664</created>
@@ -185,11 +257,41 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:D:/myProject/zhenyuyyk.github.io/styles/images" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
