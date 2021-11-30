@@ -20,78 +20,286 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="js循环总结-2021.7.14">
-      <change afterPath="$PROJECT_DIR$/structure/链表.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/danxianglianbiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/lianbiao2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/lianbiaocharu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/lianbiaoshanchu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/shuangxianglianbiao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/xunhuanlianbiao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/http和https.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/algorithm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/algorithm/排序.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/algorithm/排序.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/algorithm/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/排序.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/algorithm/排序.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/design/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/design/发布-订阅模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/design/发布-订阅模式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/design/适配器模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/design/适配器模式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/Promise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/js循环总结.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/js循环总结.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/函数式编程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/函数式编程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/前端路由.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/常见知识点整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/常见知识点整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/网络安全.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/网络安全.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/js/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/network/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/structure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/structure/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/structure/二叉树.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/structure/二叉树.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/book/structure/堆栈和队列.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/book/structure/堆栈和队列.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/browser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/design/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/design/适配器模式.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/design/适配器模式.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/frame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/Promise.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/Promise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/js循环总结.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/js循环总结.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/函数式编程.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/函数式编程.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/前端路由.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/前端路由.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/原型和原型链.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/常见知识点整理.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/常见知识点整理.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/网络安全.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/网络安全.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/js/闭包.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/js/闭包.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/network/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" afterPath="$PROJECT_DIR$/_book/search_index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/structure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/structure/二叉树.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/二叉树.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/structure/哈希表HashMap.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/哈希表HashMap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/structure/堆栈和队列.html" beforeDir="false" afterPath="$PROJECT_DIR$/_book/structure/堆栈和队列.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_book/styles/images/haxiresize.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/images/haxiresize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/.idea/mybook.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/algorithm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/algorithm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/algorithm/排序.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/algorithm/排序.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/.idea/mybook.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/排序.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/algorithm/排序.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器的多进程和js的单线程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/browser/浏览器缓存.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/发布-订阅模式.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/发布-订阅模式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/适配器模式.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/design/适配器模式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/frame/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/frame/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/frame/vue组件传值方式整理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-fontsettings/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-lunr/search-lunr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-page-treeview/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search-engine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/gitbook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/images/apple-touch-icon-precomposed-152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/gitbook/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/Promise.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/Promise.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/js循环总结.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/js循环总结.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/函数式编程.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/函数式编程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/前端路由.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/前端路由.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/原型和原型链.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/原型和原型链.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/垃圾回收机制.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/常见知识点整理.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/常见知识点整理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/浅拷贝和深拷贝.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/网络安全.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/网络安全.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/js/闭包.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/TCP三次握手和四次挥手.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/network/传输层协议TCP和UDP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/search_index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/二叉树.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/二叉树.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/哈希表HashMap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/哈希表HashMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/堆栈和队列.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/structure/堆栈和队列.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/biaojiqingchu1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/biaojiqingchu2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/dep1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/duiliepaidui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/duojincheng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/erchashu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/erchasousuoshu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/haxibiaolei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/haxiput.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/haxiresize.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/houxu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/http.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/huancun1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/huishou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/huonasuanfa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/jinsheng1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/jinsheng2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/juliecs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/kaifangdizhi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/lalianfa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/lianbiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/lianzhancharu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/lianzhanshanchu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/marksweep.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/mvvm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/qianghuancun1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/qianghuancun2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/qianxu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/scerchashu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/shu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/tcpip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/tofrom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/woshou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/xianxingtance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/xieshanghuancun1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/xieshanghuancun2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/xy1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/xy2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/yichuliangge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/yichuyige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/yichuzuoce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/zhan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/zhan1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/zhandui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/zhanshengming.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/zhanzhixing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/images/zhongxu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/book/styles/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器的多进程和js的单线程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器缓存.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/browser/浏览器缓存.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/发布-订阅模式.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/发布-订阅模式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/适配器模式.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/design/适配器模式.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/frame/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/frame/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/frame/vue组件传值方式整理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/fonts/fontawesome/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-fontsettings/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-fontsettings/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/ebook.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-highlight/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-livereload/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-lunr/search-lunr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-page-treeview/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/lunr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search-engine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-search/search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook-plugin-sharing/buttons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/gitbook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/images/apple-touch-icon-precomposed-152.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/gitbook/theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/Promise.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/Promise.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/js循环总结.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/js循环总结.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/函数式编程.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/函数式编程.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/前端路由.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/前端路由.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/原型和原型链.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/垃圾回收机制.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/垃圾回收机制.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/常见知识点整理.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/常见知识点整理.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/浅拷贝和深拷贝.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/网络安全.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/网络安全.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/闭包.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/js/闭包.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/TCP三次握手和四次挥手.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/network/传输层协议TCP和UDP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/search_index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/二叉树.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/二叉树.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/哈希表HashMap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/哈希表HashMap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/堆栈和队列.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/堆栈和队列.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/链表.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/structure/链表.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/biaojiqingchu1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/biaojiqingchu2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/danxianglianbiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/dep1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/duiliepaidui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/duojincheng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/erchashu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/erchasousuoshu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/haxibiaolei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/haxiput.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/houxu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/http.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/huancun1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/huishou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/huonasuanfa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/jinsheng1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/jinsheng2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/juliecs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/kaifangdizhi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/lalianfa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/lianbiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/lianbiao2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/lianbiaocharu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/lianbiaoshanchu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/lianzhancharu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/lianzhanshanchu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/marksweep.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/mvvm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/qianghuancun1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/qianghuancun2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/qianxu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/scerchashu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/shu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/shuangxianglianbiao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/tcpip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/tofrom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/woshou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/xianxingtance.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/xieshanghuancun1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/xieshanghuancun2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/xy1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/xy2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/yichuliangge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/yichuyige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/yichuzuoce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/zhan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/zhan1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/zhandui.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/zhanshengming.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/zhanzhixing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/images/zhongxu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_book/styles/website.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/原型和原型链.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/原型和原型链.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/常见知识点整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/常见知识点整理.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +332,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/styles/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/network" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -137,6 +345,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myProject\zhenyuyyk.github.io\network" />
       <recent name="D:\myProject\zhenyuyyk.github.io\styles\images" />
       <recent name="D:\myProject\zhenyuyyk.github.io\styles" />
       <recent name="D:\myProject\mybook" />
@@ -239,7 +448,9 @@
       <workItem from="1628471780787" duration="593000" />
       <workItem from="1628671834513" duration="638000" />
       <workItem from="1628731941202" duration="691000" />
-      <workItem from="1628833069323" duration="1886000" />
+      <workItem from="1628833069323" duration="2480000" />
+      <workItem from="1629101121779" duration="68000" />
+      <workItem from="1638257698890" duration="3662000" />
     </task>
     <task id="LOCAL-00001" summary="js循环总结-2021.7.14">
       <created>1626241842664</created>
