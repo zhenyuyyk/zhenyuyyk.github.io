@@ -1,0 +1,11 @@
+.gitbook-link,.pull-right{
+    display: none!important;
+}
+/*page-treeview插件的css控制 start*/
+.treeview__container-title{
+    display: none!important;
+}
+.treeview__container{
+    margin-bottom: 0!important;
+}
+/*page-treeview插件的css控制 end*/
