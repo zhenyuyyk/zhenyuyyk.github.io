@@ -1,6 +1,8 @@
 # 阵雨的随笔记录
 
-主要记录一些经常用到的知识
+我的github博客地址：[zhenyuyyk.github.io](https://zhenyuyyk.github.io/)
+
+主要记录一些经常用到的知识 
 
 本文使用gitbook进行编辑
 

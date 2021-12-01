@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="js循环总结-2021.7.14">
-      <change afterPath="$PROJECT_DIR$/htmlcss/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/htmlcss/常见知识点汇总.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/常见知识点整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/常见知识点整理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +183,7 @@
       <workItem from="1638257698890" duration="3662000" />
       <workItem from="1638320507176" duration="2123000" />
       <workItem from="1638327792537" duration="3166000" />
-      <workItem from="1638338980865" duration="6357000" />
+      <workItem from="1638338980865" duration="6702000" />
     </task>
     <task id="LOCAL-00001" summary="js循环总结-2021.7.14">
       <created>1626241842664</created>
