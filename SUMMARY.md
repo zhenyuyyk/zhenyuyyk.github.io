@@ -17,6 +17,7 @@
     * [BFC](htmlcss/BFC.md)
 * [框架](frame/README.md)
     * [vue组件传值方式整理](frame/vue组件传值方式整理.md)
+    * [webpack5工程化示例](frame/webpack5工程化示例.md)
 * [设计模式](design/README.md)
     * [发布-订阅模式](design/发布-订阅模式.md)
     * [适配器模式](design/适配器模式.md)
