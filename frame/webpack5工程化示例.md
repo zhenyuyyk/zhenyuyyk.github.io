@@ -206,7 +206,7 @@ module.exports = {
 
 ![img_1.png](../styles/images/pack_img_1.png)
 
-# 7. babel转义js文件
+## 8. babel转义js文件
 
 安装插件：
 
@@ -249,9 +249,9 @@ rules: [
 ]
 ```
 
-## 8. 图片、音频、字体文件处理
+## 9. 图片、音频、字体文件处理
 
-和css类似，只用添加配置：
+在webpack5以前，需要安装file-loader和url-loader处理，但是webpack内置了资源模块（asset module），代替了file-loader和url-loader，所以只需要这样做即可：
 
 ```javascript
             {
@@ -283,7 +283,7 @@ rules: [
                 }
             }
 ```
-## 9.完整配置代码
+## 10.完整配置代码
 
 <details>
   <summary>**完整代码**</summary>
@@ -382,10 +382,239 @@ module.exports = {
     }
 };
 ```
-
 </details>
 
-# 二、搭建Vue开发环境
+
+# 二、区分开发环境和生产环境
+
+
+## 1.热更新配置
+
+安装 webpack-dev-server 启动一个本地服务并且配置热更新：
+
+```
+npm i -D webpack-dev-server
+```
+
+配置如下：
+
+```javascript
+module.exports = {
+    // ...
+    devServer: {
+        port: 3000,
+        // 根据需要是否开启以下配置
+        // hot: true, //热更新
+        // open: true, //编译完自动打开浏览器
+        // compress: true,//开启gzip压缩
+        // static: { //托管静态资源文件
+        //     directory: path.join(__dirname, "../public"),
+        // },
+        // client: { //在浏览器端打印编译进度
+        //     progress: true,
+        // },
+    }
+}
+```
+
+之后去配置打包命令：
+
+```
+"dev": "webpack serve --config build/webpack.config.js"
+```
+
+## 2.区分开发环境与生产环境的关系。
+
+新建两个文件夹
+
+* webpack.dev.js 开发环境使用
+* webpack.prod.js 生产环境使用
+* webpack.config.js 公用配置
+
+使用webpack-merge帮我们merge代码：
+
+```
+npm i -D webpack-merge
+```
+
+```javascript
+// webpack.dev.js
+const { merge } = require('webpack-merge');
+const common = require('./webpack.config.js')
+
+module.exports = merge(common, {
+  mode: 'development',
+  devServer:{
+    port:3000
+  }
+});
+```
+
+```javascript
+// webpack.prod.js
+const { merge } = require('webpack-merge');
+const common = require('./webpack.config.js');
+
+module.exports = merge(common, {
+  mode: 'production',
+});
+```
+
+原先的webpack.config.js也需要做出修改，我们只需要删除mode和devserver字段就行了
+
+最后package.json中的scripts命令如下：
+
+```
+"scripts": {
+    "build": "webpack --config build/webpack.prod.js",
+    "dev": "webpack serve --config build/webpack.dev.js"
+  },
+```
+开发环境运行npm run dev,打包npm run build
+
+## 3.定义环境变量
+
+首先安装cross-env插件，是一个运行跨平台设置和使用环境变量的脚本
+
+```
+npm i cross-env -D
+```
+
+之后更改打包命令：
+
+```javascript
+"scripts": {
+    "dev": "cross-env NODE_ENV=development webpack serve --config build/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+```
+
+新建config文件夹，新建dev.env.js：
+
+```javascript
+module.exports = {
+    NODE_ENV: '"development"',
+    url: '"http://xxxxxx"'
+};
+```
+
+修改webpck.dev.js：
+
+```javascript
+const env = require("../config/dev.env");
+const webpack =require("webpack")
+
+module.exports = merge(common,{
+  plugins: [
+    new webpack.DefinePlugin({
+      "process.env": env,
+    }),
+  ],
+})
+```
+
+在main.js打印console.log(process.env)
+
+prod同理。
+
+# 三、持续优化
+
+上面进行了基础的配置，接下来我们对项目进行持续优化，比如按需加载、压缩项目体积等等...
+
+## 1.打包文件分析工具webpack-bundle-analyzer
+
+这个插件的功能是生成代码分析报告，帮助提升代码质量和网站性能。
+
+```
+// 安装
+npm i webpack-bundle-analyzer -D
+
+// 配置
+//webpack.prod.js
+
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; 
+
+plugins:[
+    new BundleAnalyzerPlugin()
+]
+```
+
+运行 npm run build ，编译结束新开一个页面，可以看到bundle之间的关系
+
+## 2.通过splitChunks分离chunks
+
+splitChunks是webpack内置的，无需安装插件，可以根据需要进行配置。
+
+作用：拆分chunk。
+
+文档地址：<https://webpack.docschina.org/plugins/split-chunks-plugin/>
+
+默认配置：
+```javascript
+// webpack.prod.js
+module.exports = {
+  //...
+  optimization: {
+    splitChunks: {
+      chunks: 'async',
+      minSize: 20000,
+      minRemainingSize: 0,
+      minChunks: 1,
+      maxAsyncRequests: 30,
+      maxInitialRequests: 30,
+      enforceSizeThreshold: 50000,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          reuseExistingChunk: true,
+        },
+        default: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true,
+        },
+      },
+    },
+  },
+}
+```
+## 3.开启gzip压缩-compression-webpack-plugin
+
+安装插件：
+```
+npm i compression-webpack-plugin -D
+```
+配置：
+```javascript
+//webpack.prod.js
+const CompressionPlugin = require("compression-webpack-plugin");
+
+module.exports = {
+  plugins: [new CompressionPlugin()],
+};
+```
+## 4.优化和压缩CSS-css-minimizer-webpack-plugin
+
+安装插件：
+
+```
+npm i css-minimizer-webpack-plugin --save-dev
+```
+
+配置：
+
+```javascript
+//webpack.prod.js
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+
+plugins:[
+    new CssMinimizerPlugin(),
+]
+```
+
+# 四、搭建Vue开发环境
 
 ## 1.安装必要依赖
 
@@ -429,35 +658,6 @@ module.exports = {
 }
 ```
 
-## 2.热更新配置
-
-安装 webpack-dev-server 启动一个本地服务并且配置热更新：
-
-```
-npm i -D webpack-dev-server
-```
-
-配置如下：
-
-```javascript
-const Webpack = require('webpack')
-module.exports = {
-  // ...
-  devServer:{
-    port:3000,
-    hot:true
-  },
-  plugins:[
-    new Webpack.HotModuleReplacementPlugin()
-  ]
-}
-```
-
-之后去配置打包命令：
-
-```
-"dev": "webpack-dev-server --config build/webpack.config.js --open"
-```
 
 ## 3.创建一个vue文件
 
@@ -526,55 +726,6 @@ export default {
 ![img_2.png](../styles/images/pack_img_2.png)
 
 
-# 三、区分开发环境和生产环境
+# 代码地址
 
-实际运用到项目时，需要区分开发环境与生产环境的关系。
-
-新建两个文件夹
-
-* webpack.dev.js 开发环境使用
-* webpack.prod.js 生产环境使用
-* webpack.config.js 公用配置
-
-使用webpack-merge帮我们merge代码：
-
-```
-npm i -D webpack-merge
-```
-
-```javascript
-// webpack.dev.js
-const { merge } = require('webpack-merge');
-const common = require('./webpack.config.js')
-
-module.exports = merge(common, {
-  mode: 'development',
-  devtool: 'inline-source-map',
-  devServer:{
-    port:3000,
-    hot:true
-  }
-});
-```
-
-```javascript
-// webpack.prod.js
-const { merge } = require('webpack-merge');
-const common = require('./webpack.config.js');
-
-module.exports = merge(common, {
-  mode: 'production',
-});
-```
-
-原先的webpack.config.js也需要做出修改，我们只需要删除mode和devserver字段就行了
-
-最后修改package.json中的scripts命令
-
-```
-"scripts": {
-    "build": "webpack --config build/webpack.prod.js",
-    "dev": "webpack-dev-server --config build/webpack.dev.js --open"
-  },
-```
-开发环境运行npm run dev,打包npm run build
+以上demo上传到了github，地址：<https://github.com/zhenyuyyk/webpackdemo>
