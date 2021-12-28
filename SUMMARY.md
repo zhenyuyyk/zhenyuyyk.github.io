@@ -12,6 +12,7 @@
     * [网络安全](js/网络安全.md)
     * [常见知识点整理](js/常见知识点整理.md)
     * [js循环总结](js/js循环总结.md)
+    * [es6+的实际应用](js/es6+的实际应用.md)
 * [HTML和CSS](htmlcss/README.md)
     * [常见知识点汇总](htmlcss/常见知识点汇总.md)
     * [BFC](htmlcss/BFC.md)
