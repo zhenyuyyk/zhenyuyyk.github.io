@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76a7430a-458a-40d3-b559-c0cc0eb7afb0" name="默认的" comment="js循环总结-2021.7.14">
-      <change afterPath="$PROJECT_DIR$/js/es6+的实际应用.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/charupaixu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/images/maopaopaixu.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/network/axios取消请求CancelToken原理.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SUMMARY.md" beforeDir="false" afterPath="$PROJECT_DIR$/SUMMARY.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithm/排序.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm/排序.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/js循环总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/js循环总结.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/浅拷贝和深拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/js/浅拷贝和深拷贝.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +194,10 @@
       <workItem from="1640589222952" duration="1922000" />
       <workItem from="1640591616902" duration="1351000" />
       <workItem from="1640673159945" duration="3117000" />
-      <workItem from="1640678596286" duration="2024000" />
+      <workItem from="1640678596286" duration="2705000" />
+      <workItem from="1640762737825" duration="2463000" />
+      <workItem from="1640826159528" duration="1797000" />
+      <workItem from="1640914895908" duration="2637000" />
     </task>
     <task id="LOCAL-00001" summary="js循环总结-2021.7.14">
       <created>1626241842664</created>

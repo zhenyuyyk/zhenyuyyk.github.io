@@ -29,6 +29,7 @@
     * [http和https](network/http和https.md)
     * [传输层协议TCP和UDP](network/传输层协议TCP和UDP.md)
     * [TCP三次握手和四次挥手](network/TCP三次握手和四次挥手.md)
+    * [axios取消请求CancelToken原理](network/axios取消请求CancelToken原理.md)
 * [数据结构](structure/README.md)
     * [堆栈和队列](structure/堆栈和队列.md)
     * [二叉树](structure/二叉树.md)
