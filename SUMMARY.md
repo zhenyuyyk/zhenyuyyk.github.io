@@ -27,6 +27,7 @@
     * [浏览器的多进程和js的单线程](browser/浏览器的多进程和js的单线程.md)
 * [网络协议](network/README.md)
     * [http和https](network/http和https.md)
+    * [http状态码](network/http状态码.md)
     * [传输层协议TCP和UDP](network/传输层协议TCP和UDP.md)
     * [TCP三次握手和四次挥手](network/TCP三次握手和四次挥手.md)
     * [axios取消请求CancelToken原理](network/axios取消请求CancelToken原理.md)
